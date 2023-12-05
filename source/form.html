@@ -71,86 +71,109 @@
     </nav>
 
     </header>
-  <main class="main-conteiner">
+  <main class="main-conteiner main-form">
     <section class="selection-programm">
-      <h1 class="selection-programm__title h1-title">Подбор программы</h1>
+      <div class="selection-program-container">
+        <div class="selection-program-form">
+      <h1 class="selection-programm__title title title--style">Подбор программы</h1>
       <p class="selection-programm__desc">ЗАРЛНИТЕ АНКЕТУ, И МЫ ПОДБЕРЕМ ПРОГРАММУ ПИТАНИЯ ДЛЯ ВАШЕГО КОТА</p>
+    </div>
       <form class="selection-programm__form" method="get" action="https://echo.htmlacademy.ru">
         <fieldset class="selection-programm__animal-data">
           <legend class="selection-programm__legend visually-hidden">
             <h2 class="selection-programm__title">Данные животного</h2>
           </legend>
-          <label class="selection-programm__label" for="animal-name">ИМЯ:*</label>
+          <label class="selection-programm__label" for="animal-name">
+          <span class="selection-programm__name form-data">ИМЯ:*</span>
           <input class="selection-programm__input selection-programm__input--selection-name"  id="animal-name" type="text" name="selection-name" value="БАРСИК">
-        <label class="selection-programm__label"for="animal-weight" >ВЕС (КГ):*</label>
-        <input class="selection-programm__input selection-programm__input--selection-weight"  id="animal-weight" type="text" name="selection-weight" value="7">
-        <label class="selection-programm__label"for="animal-age" >ВОЗРАСТ (КГ):</label>
-        <input class="selesction-programm__input selection-programm__input--selection-age"  id="animal-age" type="text" name="selection-age" value="7">
-      </fieldset>
-      <fieldset class="selection-programm__animal-type-programm">
-        <legend class="selection-programm__legend visually-hidden">
-          <h2 class="selection-programm__title">Тип программы</h2>
-        </legend>
-        <label class="selection-programm__label" for="slim">
-        <input class="visually-hidden control-input" type="radio" name="programm-type" value="slim" id="slim" checked>
-        <span class="selection-programm__mark"></span>
-        <span class="selection-programm__mark-text"> ПОХУДЕНИЕ</span>
+        </label>
+        <label class="selection-programm__label"for="animal-weight" >
+          <span class="selection-programm__name form-data">ВЕС (КГ):*</span>
+          <input class="selection-programm__input selection-programm__input--selection-weight"  id="animal-weight" type="text" name="selection-weight" value="7">
       </label>
-
-      <label class="selection-programm__label" for="weight">
-        <input class="visually-hidden control-input" type="radio" name="programm-type" value="add-weight" id="weight">
-        <span class="selection-programm__mark"></span>
-        <span class="selection-programm__mark-text"> НАБОР МАССЫ</span>
-       </label>
-
-       <label class="selection-programm__label" for="advice">
-        <input class="visually-hidden control-input" type="radio" name="programm-type" value="advice" id="advice">
-        <span class="selection-programm__mark"></span>
-        <span class="selection-programm__mark-text"> НЕ ЗНАЮ (НУЖЕН ВАШ СОВЕТ)</span>
-       </label>
+        <label class="selection-programm__label"for="animal-age" >
+          <span class="selection-programm__name form-data">ВОЗРАСТ (лет):</span>
+          <input class="selesction-programm__input selection-programm__input--selection-age"  id="animal-age" type="text" name="selection-age" value="7">
+      </label>
       </fieldset>
-<fieldset class="selection-programm__contact-details">
-  <legend class="selection-programm__legend">
-    <h2 class="selection-programm__title">Контактные данные (владельца кота)</h2>
-  </legend>
-  <label class="selection-programm__label" for="mail">E-mail:*</label>
-  <input class="selection-programm__input selection-programm__input--email" id="mail" type="email" name="e-mail" value="kuklachev@gmail.com">
-  <label class="selection-programm__label" for="phone">Телефон:*</label>
-  <input class="selection-programm__input selection-programm__input--phone" id="phone" type="tel" name="tel" value="8 (960) 900-60-90">
+      <fieldset class="selection-programm-type">
+        <legend class="selection-programm__legend visually-hidden">Тип программы </legend>
+        <ul class="selection-programm-type__list">
+          <li class="selection-programm-type__item">
+            <label class="selection-programm-type__label control">
+              <input class="visually-hidden input input--radio" type="radio" name="tariff-type" value="slim" checked>
+              <span class="control__mark"></span>
+              <span class="form-inscription control__discrip">Похудение</span>
+            </label>
+          </li>
+          <li class="selection-programm-type__item">
+            <label class="selection-programm-type__label control">
+              <input class="visually-hidden input input--radio" type="radio" name="tariff-type" value="pro">
+              <span class="control__mark"></span>
+              <span class="form-inscription control__discrip">Набор массы</span>
+            </label>
+          </li>
+          <li class="selection-programm-type__item">
+            <label class="selection-programm-type__label control">
+              <input class="visually-hidden input input--radio" type="radio" name="tariff-type" value="noknow">
+              <span class="control__mark"></span>
+              <span class="form-inscription control__discrip">Не знаю (Нужен ваш совет)</span>
+            </label>
+          </li>
+        </ul>
+      </fieldset>
+<fieldset class="selection-programm-contact-details">
+  <legend class="selection-programm-contact-details__legend">Контактные данные (владельца кота)</legend>
+  <label class="selection-programm-contact-details__label" for="mail">
+  <span class="selection-programm-contact-details__title form-inscription">E-mail:*</span>
+  <input class="selection-programm__input selection-programm__input--email" id="mail" type="email" name="e-mail" value="kuklachev@gmail.com" required>
+</label>
+  <label class="selection-programm__label" for="phone">
+    <span class="selection-programm-contact-details__title form-inscription">Телефон:*</span>
+  <input class="selection-programm__input selection-programm__input--phone" id="phone" type="tel" name="tel" value="8 (960) 900-60-90" required>
+</label>
 </fieldset>
 <fieldset class="selection-programm__comments">
-  <legend class="selection-programm__legend" >
-    <h2 class="selection-programm__title">Комментарий</h2>
-  </legend>
+  <legend class="selection-programm__legend" >Комментарий</legend>
   <label class="selection-programm__label" for="comments">
-    <textarea class="selection-programm__comments-text" id="comments" rows="8" cols="35" name="comments" placeholder="Расскажите обо всех повадках кота"></textarea>
+   <span class="visually-hidden">Ваш комментарий:</span>
+    <textarea class="selection-programm__comments-text comments-text" id="comments" rows="8" cols="35" name="comments" placeholder="Расскажите обо всех повадках кота" required></textarea>
   </label>
   </fieldset>
 <fieldset class="selection-programm__additionally">
-  <legend class="selection-programm__legend">
-    <h2 class="selection-programm__title">Дополнительно</h2></legend>
-  <label class="selection-programm__label" for="sweetener">
-    <input class="visually-hidden" type="checkbox" id="sweetener" name="sweetener" checked>
+  <legend class="selection-programm__legend">Дополнительно</legend>
+  <ul class="selection-programm-type__list">
+    <il class="selection-programm__item">
+  <label class="selection-programm__label control" for="sweetener">
+    <input class="visually-hidden input input--checkbox" type="checkbox" id="sweetener" name="sweetener" checked>
     <span class="selection-programm__mark"></span>
-    <span class="selection-programm__mark-text">Сахарозаменитель</span>
+    <span class="form-inscription control__discrip">Сахарозаменитель</span>
   </label>
-  <label class="selection-programm__label" for="water">
-    <input class="visually-hidden" type="checkbox" id="water" name="water">
+</il>
+<il class="selection-programm__item">
+  <label class="selection-programm__label control" for="water">
+    <input class="visually-hidden input input--checkbox" type="checkbox" id="water" name="sweetener" checked>
     <span class="selection-programm__mark"></span>
-    <span class="selection-programm__mark-text">Питьевая вода</span>
+    <span class="form-inscription control__discrip">Питьевая вода</span>
   </label>
-  <label class="selection-programm__label" for="milk">
-    <input class="visually-hidden" type="checkbox" id="milk" name="milk">
+</il>
+<il class="selection-programm__item">
+  <label class="selection-programm__label control" for="milk">
+    <input class="visually-hidden input input--checkbox" type="checkbox" id="milk" name="sweetener" checked>
     <span class="selection-programm__mark"></span>
-    <span class="selection-programm__mark-text">Молоко</span>
+    <span class="form-inscription control__discrip">Молоко</span>
   </label>
-  <label class="selection-programm__label" for="vitamins">
-    <input class="visually-hidden" type="checkbox" id="vitamins" name="vitamins">
+</il>
+<il class="selection-programm__item">
+  <label class="selection-programm__label control" for="vitamins">
+    <input class="visually-hidden input input--checkbox" type="checkbox" id="vitamins" name="sweetener" checked>
     <span class="selection-programm__mark"></span>
-    <span class="selection-programm__mark-text">Витамины</span>
+    <span class="form-inscription control__discrip">Витамины</span>
   </label>
+</il>
+</ul>
 </fieldset>
-<button class="selection-programm__button button" type="submit">Отправить заявку</button>
+<button class="selection-programm__button button--primary" type="submit">Отправить заявку</button>
 <p class="selection-programm__necessarily">* — Обязательные поля</p>
       </form>
     </section>
@@ -160,6 +183,7 @@
     <address class="address__location">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</address>
     <img class="address__location" src="images/location.jpg" alt="Карта местоположения Cat Energy!" width="320px" height="362px">
       </div>
+    </div>
     </section>
   </main>
 
