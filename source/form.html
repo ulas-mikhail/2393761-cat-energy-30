@@ -56,7 +56,7 @@
           <span class="visually-hidden">Открыть Меню</span>
                 </button>
          <div class="main-navigation__wrapper">
-        <ul class="main-navigation__navigation-list navigaton-list">
+        <ul class="main-navigation__navigation-list navigation-list">
           <li class="navigation-list__item ">
             <a class="navigation-list__link" href="index.html">ГЛАВНАЯ</a>
           </li>
@@ -83,89 +83,100 @@
           <legend class="selection-programm__legend visually-hidden">
             <h2 class="selection-programm__title">Данные животного</h2>
           </legend>
-          <label class="selection-programm__label" for="animal-name">
-          <span class="selection-programm__name form-data">ИМЯ:*</span>
-          <input class="selection-programm__input selection-programm__input--selection-name"  id="animal-name" type="text" name="selection-name" value="БАРСИК">
+         <div class="selection-programm__characteristics animal-name">
+          <label class="animal-name__label" for="animal-name">
+          <span class="animal-name__title form-data">ИМЯ:*</span>
+          <input class="animal-name__input animal-name__input--selection-name input"  id="animal-name" type="text" name="selection-name" value="БАРСИК">
         </label>
-        <label class="selection-programm__label"for="animal-weight" >
-          <span class="selection-programm__name form-data">ВЕС (КГ):*</span>
-          <input class="selection-programm__input selection-programm__input--selection-weight"  id="animal-weight" type="text" name="selection-weight" value="7">
+      </div>
+      <div class="selection-programm__weight animal-weight">
+        <label class="animal-weight__label"for="animal-weight" >
+          <span class="animal-weight__title form-data">ВЕС (КГ):*</span>
+          <input class="animal-weight__input animal-weight__input--selection-weight input"  id="animal-weight" type="text" name="selection-weight" value="7">
       </label>
-        <label class="selection-programm__label"for="animal-age" >
-          <span class="selection-programm__name form-data">ВОЗРАСТ (лет):</span>
-          <input class="selection-programm__input selection-programm__input--selection-age"  id="animal-age" type="text" name="selection-age" value="7">
+      </div>
+      <div class="selection-programm__age animal-age">
+        <label class="animal-age__label"for="animal-age" >
+          <span class="animal-age__title form-data">ВОЗРАСТ (лет):</span>
+          <input class="animal-age__input animal-age__input--selection-age input"  id="animal-age" type="text" name="selection-age" value="7">
       </label>
       </fieldset>
       <fieldset class="selection-programm-type">
         <legend class="selection-programm__legend visually-hidden">Тип программы </legend>
-        <ul class="selection-programm-type__list">
-          <li class="selection-programm-type__item">
-            <label class="selection-programm-type__label control">
-              <input class="visually-hidden input input--radio" type="radio" name="tariff-type" value="slim" checked>
+        <ul class="selection-programm-type__list list-type">
+          <li class="list-type__item">
+            <label class="list-type__label control">
+              <input class="visually-hidden list-type__input input input--radio" type="radio" name="tariff-type" value="slim" checked>
               <span class="control__mark"></span>
               <span class="form-inscription control__discrip">Похудение</span>
             </label>
           </li>
-          <li class="selection-programm-type__item">
-            <label class="selection-programm-type__label control">
-              <input class="visually-hidden input input--radio" type="radio" name="tariff-type" value="pro">
+          <li class="list-type__item">
+            <label class="list-type__label control">
+              <input class="visually-hidden list-type__input input input--radio" type="radio" name="tariff-type" value="pro">
               <span class="control__mark"></span>
               <span class="form-inscription control__discrip">Набор массы</span>
             </label>
           </li>
-          <li class="selection-programm-type__item">
-            <label class="selection-programm-type__label control">
-              <input class="visually-hidden input input--radio" type="radio" name="tariff-type" value="noknow">
+          <li class="list-type__item">
+            <label class="list-type__item__label control">
+              <input class="visually-hidden list-type__input input input--radio" type="radio" name="tariff-type" value="noknow">
               <span class="control__mark"></span>
               <span class="form-inscription control__discrip">Не знаю (Нужен ваш совет)</span>
             </label>
           </li>
         </ul>
       </fieldset>
-<fieldset class="selection-programm-contact-details">
-  <legend class="selection-programm-contact-details__legend">Контактные данные (владельца кота)</legend>
-  <label class="selection-programm-contact-details__label" for="mail">
-  <span class="selection-programm-contact-details__title form-inscription">E-mail:*</span>
-  <input class="selection-programm__input selection-programm__input--email" id="mail" type="email" name="e-mail" value="kuklachev@gmail.com" required>
+<fieldset class="selection-programm__contact-details">
+  <legend class="selection-programm__legend">Контактные данные (владельца кота)</legend>
+  <div class="selection-programm__mail contact-mail">
+  <label class="contact-mail__label" for="mail">
+  <span class="contact-mail__title form-inscription">E-mail:*</span>
+  <input class="contact-mail__input input--email input" id="mail" type="email" name="e-mail" value="kuklachev@gmail.com" required>
 </label>
-  <label class="selection-programm__label" for="phone">
-    <span class="selection-programm-contact-details__title form-inscription">Телефон:*</span>
-  <input class="selection-programm__input selection-programm__input--phone" id="phone" type="tel" name="tel" value="8 (960) 900-60-90" required>
+</div>
+<div class="selection-programm__phone contact-phone">
+<label class="contact-phone__label" for="phone">
+    <span class="contact-phone__title form-inscription">Телефон:*</span>
+  <input class="contact-phone__input input--phone input" id="phone" type="tel" name="tel" value="8 (960) 900-60-90" required>
 </label>
+</div>
 </fieldset>
 <fieldset class="selection-programm__comments">
   <legend class="selection-programm__legend" >Комментарий</legend>
-  <label class="selection-programm__label" for="comments">
+  <div class="selection-programm__animal-information animal-information">
+  <label class="animal-information__label" for="comments">
    <span class="visually-hidden">Ваш комментарий:</span>
-    <textarea class="selection-programm__comments-text comments-text" id="comments" rows="8" cols="35" name="comments" placeholder="Расскажите обо всех повадках кота" required></textarea>
+    <textarea class="animal-information__text comments-text" id="comments" rows="8" cols="35" name="comments" placeholder="Расскажите обо всех повадках кота" required></textarea>
   </label>
+  </div>
   </fieldset>
 <fieldset class="selection-programm__additionally">
   <legend class="selection-programm__legend">Дополнительно</legend>
-  <ul class="selection-programm__list">
-    <il class="selection-programm__item">
-  <label class="selection-programm__label control" for="sweetener">
+  <ul class="selection-programm__list additionally">
+    <il class="additionally__item">
+  <label class="additionally__label control" for="sweetener">
     <input class="visually-hidden input input--checkbox" type="checkbox" id="sweetener" name="sweetener" checked>
     <span class="selection-programm__mark"></span>
     <span class="form-inscription control__discrip">Сахарозаменитель</span>
   </label>
 </il>
-<il class="selection-programm__item">
-  <label class="selection-programm__label control" for="water">
+<il class="additionally__item">
+  <label class="additionally__label control" for="water">
     <input class="visually-hidden input input--checkbox" type="checkbox" id="water" name="sweetener" checked>
     <span class="selection-programm__mark"></span>
     <span class="form-inscription control__discrip">Питьевая вода</span>
   </label>
 </il>
-<il class="selection-programm__item">
-  <label class="selection-programm__label control" for="milk">
+<il class="additionally__item">
+  <label class="additionally__label control" for="milk">
     <input class="visually-hidden input input--checkbox" type="checkbox" id="milk" name="sweetener" checked>
     <span class="selection-programm__mark"></span>
     <span class="form-inscription control__discrip">Молоко</span>
   </label>
 </il>
-<il class="selection-programm__item">
-  <label class="selection-programm__label control" for="vitamins">
+<il class="additionally__item">
+  <label class="additionally__label control" for="vitamins">
     <input class="visually-hidden input input--checkbox" type="checkbox" id="vitamins" name="sweetener" checked>
     <span class="selection-programm__mark"></span>
     <span class="form-inscription control__discrip">Витамины</span>
@@ -173,7 +184,7 @@
 </il>
 </ul>
 </fieldset>
-<button class="selection-programm__button button--primary" type="submit">Отправить заявку</button>
+<button class="selection-programm__button button button--primary" type="submit">Отправить заявку</button>
 <p class="selection-programm__necessarily">* — Обязательные поля</p>
       </form>
     </section>
