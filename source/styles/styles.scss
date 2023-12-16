@@ -1,7 +1,16 @@
 /* GLOBAL */
 @import "./global/variables.scss";
-@import "./global/global.scss";
 @import "./global/fonts.scss";
+@import "./global/global.scss";
 
 /* BLOCKS */
+@import "./blocks/visually-hidden.scss";
 @import "./blocks/header.scss";
+@import "./blocks/page.scss";
+@import "./blocks/main-header.scss";
+@import "./blocks/main-navigation.scss";
+
+// $color: green;
+// body {
+//   background-color: $color;
+// }
