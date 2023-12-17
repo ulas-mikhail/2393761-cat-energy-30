@@ -1,0 +1,10 @@
+.link {
+  font-family: $secondary-font;
+  color: #000000;
+  text-transform: uppercase;
+  text-decoration: none;
+
+  &--arrow {
+    color: #222222;
+  }
+}
