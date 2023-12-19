@@ -11,39 +11,41 @@
   <link rel="icon" type="image/png" sizes="32x32" href="favicons/favicon-32x32.png">
   <link rel="icon" type="image/png" sizes="16x16" href="favicons/favicon-16x16.png">
   <link rel="manifest" href="/manifest.webmanifest">
-  <link rel="stylesheet" href="styles/styles.css" />
+  <link rel="stylesheet" href="styles/styles.css">
   <script src="scripts/index.js" defer></script>
 </head>
 
 <body class="page__body">
   <header class="page__header main-header">
-    <a class="main-header__first-logo-image logo-first logo-first--header" href="index.html" aria-label="главная">
-      <picture>
-        <source media="(min-width: 1440px)" type="image/svg+xml" width="70" height="59" srcset="images/icons/logo-desktop.svg">
-        <source media="(min-width: 768px)" type="image/svg+xml" width="60" height="50" srcset="images/icons/logo-tablet.svg">
-        <img class="main-header__logo" src="images/icons/logo-mobile.svg" alt="Логотип." width="33" height="38">
-      </picture>
-    </a>
-    <a class="main-header__second-logo-image logo-second logo-second--header" href="index.html" aria-label="главная">
-      <picture>
-        <source media="(min-width: 1440px)" type="image/svg+xml" srcset="images/icons/second-logo-mobile.svg" width="101" height="18">
-        <img class="main-header__logo-title logo-title" src="images/icons/second-logo-mobile.svg" width="101" height="18" alt="Текстовый логотип.">
-      </picture>
-    </a>
+    <div class="main-header__logo-container">
+      <a class="main-header__first-logo-image logo-first logo-first--header" href="index.html" aria-label="главная">
+        <picture>
+          <source media="(min-width: 1440px)" type="image/svg+xml" width="70" height="59" srcset="images/icons/logo-desktop.svg">
+          <source media="(min-width: 768px)" type="image/svg+xml" width="60" height="50" srcset="images/icons/logo-tablet.svg">
+          <img class="main-header__logo" src="images/icons/logo-mobile.svg" alt="Логотип." width="33" height="38">
+        </picture>
+      </a>
+      <a class="main-header__second-logo-image logo-second logo-second--header" href="index.html" aria-label="главная">
+        <picture>
+          <source media="(min-width: 1440px)" type="image/svg+xml" srcset="images/icons/second-logo-mobile.svg" width="101" height="18">
+          <img class="main-header__logo-title logo-title" src="images/icons/second-logo-mobile.svg" width="101" height="18" alt="Текстовый логотип.">
+        </picture>
+      </a>
+    </div>
     <nav class="main-navigation">
       <button class="main-navigation__toggle button-burger" type="button">
         <span class="visually-hidden">Открыть Меню</span>
       </button>
       <div class="main-navigation__wrapper">
-        <ul class="main-navigation__navigation-list navigation-list">
-          <li class="navigation-list__item">
-            <a class="navigation-list__link" href="index.html">ГЛАВНАЯ</a>
+        <ul class="main-navigation__list list list__nav">
+          <li class="main-navigation__item">
+            <a class="main-navigation__link" href="index.html">ГЛАВНАЯ</a>
           </li>
-          <li class="navigation-list__item navigation-list__item--current">
-            <span class="navigation-list__link">КАТАЛОГ ПРОДУКЦИИ</span>
+          <li class="main-navigation__item main-navigation__item--current">
+            <span class="main-navigation__link">КАТАЛОГ ПРОДУКЦИИ</span>
           </li>
-          <li class="navigation-list__item">
-            <a class="navigation-list__link" href="form.html">ПОДБОР ПРОГРАММЫ</a>
+          <li class="main-navigation__item">
+            <a class="main-navigation__link" href="form.html">ПОДБОР ПРОГРАММЫ</a>
           </li>
         </ul>
       </div>
@@ -332,75 +334,75 @@
       </div>
     </section>
 
-    <section class="additional-product">
+    <section class="additional">
       <div class="container">
-        <h2 class="additional-product__title title title--sm">
+        <h2 class="additional__title title title--sm">
           Дополнительные товары
         </h2>
-        <ul class="additional-product__list list--additional ">
-          <li class="additional-product__item">
-            <article class="additional-product__card additional-product-card-item">
-              <div class="additional-product-card-item__wrapper">
-                <h3 class="additional-product-card-item__title title title--tiny">
-                  <a class="additional-product-card-item__link" href="#">Сахарозаменитель</a>
+        <ul class="additional__list list--additional ">
+          <li class="additional__item">
+            <article class="additional__card additional-card-item">
+              <div class="additional-card-item__wrapper">
+                <h3 class="additional-card-item__title title title--tiny">
+                  <a class="additional-card-item__link" href="#">Сахарозаменитель</a>
                 </h3>
-                <p class="additional-product-card-item__desc desc-product">
+                <p class="additional-card-item__desc desc-product">
                   <span class="desc-product__name">1 упаковка (100 г)</span>
                   <span class="desc-product__number">200 ₽</span>
                 </p>
               </div>
-              <button class="additional-product-card-item__button button button--primary" type="submit">
+              <button class="additional-card-item__button button button--primary" type="submit">
                 Заказать
               </button>
             </article>
           </li>
 
-          <li class="additional-product__item">
-            <article class="additional-product__card additional-product-card-item">
-              <div class="additional-product-card-item__wrapper">
-                <h3 class="additional-product-card-item__title title title--tiny">
-                  <a class="additional-product-card-item__link" href="#">Питьевая вода</a>
+          <li class="additional__item">
+            <article class="additional__card additional-card-item">
+              <div class="additional-card-item__wrapper">
+                <h3 class="additional-card-item__title title title--tiny">
+                  <a class="additional-card-item__link" href="#">Питьевая вода</a>
                 </h3>
-                <p class="additional-product-card-item__desc desc-product">
+                <p class="additional-card-item__desc desc-product">
                   <span class="desc-product__name">5 литров</span>
                   <span class="desc-product__number">50 ₽</span>
                 </p>
               </div>
-              <button class="additional-product-card-item__button button button--primary" type="submit">
+              <button class="additional-card-item__button button button--primary" type="submit">
                 Заказать
               </button>
             </article>
           </li>
 
-          <li class="additional-product__item">
-            <article class="additional-product__card additional-product-card-item">
-              <div class="additional-product-card-item__wrapper">
-                <h3 class="additional-product-card-item__title title title--tiny">
-                  <a class="additional-product-card-item__link" href="#">Молоко</a>
+          <li class="additional__item">
+            <article class="additional__card additional-card-item">
+              <div class="additional-card-item__wrapper">
+                <h3 class="additional-card-item__title title title--tiny">
+                  <a class="additional-card-item__link" href="#">Молоко</a>
                 </h3>
-                <p class="additional-product-card-item__desc desc-product">
+                <p class="additional-card-item__desc desc-product">
                   <span class="desc-product__name">1 литр</span>
                   <span class="desc-product__number">100 ₽</span>
                 </p>
               </div>
-              <button class="additional-product-card-item__button button button--primary" type="submit">
+              <button class="additional-card-item__button button button--primary" type="submit">
                 Заказать
               </button>
             </article>
           </li>
 
-          <li class="additional-product__item">
-            <article class="additional-product__card additional-product-card-item">
-              <div class="additional-product-card-item__wrapper">
-                <h3 class="additional-product-card-item__title title title--tiny">
-                  <a class="additional-product-card-item__link" href="#">витамины</a>
+          <li class="additional__item">
+            <article class="additional__card additional-card-item">
+              <div class="additional-card-item__wrapper">
+                <h3 class="additional-card-item__title title title--tiny">
+                  <a class="additional-card-item__link" href="#">витамины</a>
                 </h3>
-                <p class="additional-product-card-item__desc desc-product">
+                <p class="additional-card-item__desc desc-product">
                   <span class="desc-product__name">1 упаковка (30 г)</span>
                   <span class="desc-product__number">300 ₽</span>
                 </p>
               </div>
-              <button class="additional-product-card-item__button button button--primary" type="submit">
+              <button class="additional-card-item__button button button--primary" type="submit">
                 Заказать
               </button>
             </article>

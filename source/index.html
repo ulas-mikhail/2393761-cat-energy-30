@@ -11,39 +11,41 @@
   <link rel="icon" type="image/png" sizes="32x32" href="favicons/favicon-32x32.png" />
   <link rel="icon" type="image/png" sizes="16x16" href="favicons/favicon-16x16.png" />
   <link rel="manifest" href="/manifest.webmanifest" />
-  <link rel="stylesheet" href="styles/styles.css" />
+  <link rel="stylesheet" href="styles/styles.css">
   <script src="scripts/index.js" defer></script>
 </head>
 
 <body class="page__body">
   <header class="page__header main-header">
-    <span class="main-header__first-logo-image logo-first logo-first--header">
-      <picture>
-        <source media="(min-width: 1440px)" type="image/svg+xml" width="70" height="59" srcset="images/icons/logo-desktop.svg" />
-        <source media="(min-width: 768px)" type="image/svg+xml" width="60" height="50" srcset="images/icons/logo-tablet.svg" />
-        <img class="main-header__logo" src="images/icons/logo-mobile.svg" alt="Логотип." width="33" height="38" />
-      </picture>
-    </span>
-    <span class="main-header__second-logo-image logo-second logo-second--header">
-      <picture>
-        <source media="(min-width: 1440px)" type="image/svg+xml" srcset="images/icons/second-logo-mobile.svg" width="101" height="18" />
-        <img class="main-header__logo-title logo-title" src="images/icons/second-logo-mobile.svg" width="101" height="18" alt="Текстовый логотип." />
-      </picture>
-    </span>
+    <div class="main-header__logo-container">
+      <span class="main-header__first-logo-image logo-first logo-first--header">
+        <picture>
+          <source media="(min-width: 1440px)" type="image/svg+xml" width="70" height="59" srcset="images/icons/logo-desktop.svg" />
+          <source media="(min-width: 768px)" type="image/svg+xml" width="60" height="50" srcset="images/icons/logo-tablet.svg" />
+          <img class="main-header__logo" src="images/icons/logo-mobile.svg" alt="Логотип." width="33" height="38" />
+        </picture>
+      </span>
+      <span class="main-header__second-logo-image logo-second logo-second--header">
+        <picture>
+          <source media="(min-width: 1440px)" type="image/svg+xml" srcset="images/icons/second-logo-mobile.svg" width="101" height="18" />
+          <img class="main-header__logo-title logo-title" src="images/icons/second-logo-mobile.svg" width="101" height="18" alt="Текстовый логотип." />
+        </picture>
+      </span>
+    </div>
     <nav class="main-navigation">
       <button class="main-navigation__toggle button-burger" type="button">
         <span class="visually-hidden">Открыть Меню</span>
       </button>
       <div class="main-navigation__wrapper">
-        <ul class="main-navigation__navigation-list navigation-list">
-          <li class="navigation-list__item navigation-list__item--current">
-            <span class="navigation-list__link">ГЛАВНАЯ</span>
+        <ul class="main-navigation__list list list__nav">
+          <li class="main-navigation__item main-navigation__item--current">
+            <span class="main-navigation__link">ГЛАВНАЯ</span>
           </li>
-          <li class="navigation-list__item">
-            <a class="navigation-list__link" href="catalog.html">КАТАЛОГ ПРОДУКЦИИ</a>
+          <li class="main-navigation__item">
+            <a class="main-navigation__link" href="catalog.html">КАТАЛОГ ПРОДУКЦИИ</a>
           </li>
-          <li class="navigation-list__item">
-            <a class="navigation-list__link" href="form.html">ПОДБОР ПРОГРАММЫ</a>
+          <li class="main-navigation__item">
+            <a class="main-navigation__link" href="form.html">ПОДБОР ПРОГРАММЫ</a>
           </li>
         </ul>
       </div>

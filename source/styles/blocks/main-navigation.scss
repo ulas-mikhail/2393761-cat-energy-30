@@ -1,12 +1,25 @@
 .main-navigation {
-
+  display: flex;
 }
+
 .main-navigation__toggle {
-
+  display: inline-flex;
 }
+
 .main-navigation__wrapper {
 
 }
-.main-navigation__navigation-list {
+
+.main-navigation__list {
+
+}
+
+.main-navigation__item {
+  &--current {
+
+  }
+}
+
+.main-navigation__link {
 
 }
