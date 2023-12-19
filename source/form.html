@@ -51,8 +51,9 @@
   </header>
   <main class="page__main main-container main-form">
     <section class="selection-programm">
-      <div class="selection-programm-container">
-        <div class="selection-program-form">
+      <div class="container">
+        <div class="selection-programm__container">
+
           <h1 class="selection-programm__title title title--medium">
             Подбор программы
           </h1>
@@ -60,113 +61,112 @@
             ЗАРЛНИТЕ АНКЕТУ, И МЫ ПОДБЕРЕМ ПРОГРАММУ ПИТАНИЯ ДЛЯ ВАШЕГО КОТА
           </p>
         </div>
-        <form class="selection-programm__form" method="get" action="https://echo.htmlacademy.ru">
-          <fieldset class="selection-programm__animal-data">
-            <legend class="selection-programm__legend visually-hidden">
-              <h2 class="selection-programm__title">Данные животного</h2>
-            </legend>
-            <div class="selection-programm__characteristics animal-name">
-              <label class="animal-name__label" for="animal-name">
-                <span class="animal-name__title form-data">ИМЯ:*</span>
-                <input class="animal-name__input animal-name__input--selection-name input" id="animal-name" type="text" name="selection-name" value="БАРСИК" />
+        <form class="selection-programm__form survey-animal" method="get" action="https://echo.htmlacademy.ru">
+          <fieldset class="survey-animal__fieldset">
+            <legend class="visually-hidden ">Данные животного</legend>
+
+            <div class="survey-animal__characteristic survey-animal__characteristic--name">
+              <label class="survey-animal__label" for="animal-name">
+                <span class="survey-animal__title form-data">ИМЯ:*</span>
+                <input class="survey-animal__input input-field input-field--name" id="animal-name" type="text" name="selection-name" value="БАРСИК" />
               </label>
             </div>
-            <div class="selection-programm__weight animal-weight">
-              <label class="animal-weight__label" for="animal-weight">
-                <span class="animal-weight__title form-data">ВЕС (КГ):*</span>
-                <input class="animal-weight__input animal-weight__input--selection-weight input" id="animal-weight" type="text" name="selection-weight" value="7" />
+            <div class="survey-animal__characteristic survey-animal__characteristic--weight">
+              <label class="survey-animal__label" for="animal-weight">
+                <span class="survey-animal__title form-data">ВЕС (КГ):*</span>
+                <input class="survey-animal__input input-field input-field--weight" id="animal-weight" type="text" name="selection-weight" value="7" />
               </label>
             </div>
-            <div class="selection-programm__age animal-age">
-              <label class="animal-age__label" for="animal-age">
-                <span class="animal-age__title form-data">ВОЗРАСТ (лет):</span>
-                <input class="animal-age__input animal-age__input--selection-age input" id="animal-age" type="text" name="selection-age" value="7" />
+            <div class="survey-animal__characteristic survey-animal__characteristic--age">
+              <label class="survey-animal__label" for="animal-age">
+                <span class="survey-animal__title form-data">ВОЗРАСТ (лет):</span>
+                <input class="survey-animal__input input-field input-field--age" id="animal-age" type="text" name="selection-age" value="7" />
               </label>
             </div>
           </fieldset>
-          <fieldset class="selection-programm-type">
-            <legend class="selection-programm__legend visually-hidden">
+          <fieldset class="survey-animal__fieldset">
+            <legend class="visually-hidden">
               Тип программы
             </legend>
-            <ul class="selection-programm-type__list list-type">
-              <li class="list-type__item">
-                <label class="list-type__label control">
-                  <input class="visually-hidden list-type__input input input--radio" type="radio" name="tariff-type" value="slim" checked />
+            <ul class="survey-animal__list list list--type">
+              <li class="survey-animal__item">
+                <label class="survey-animal__label control control--radio">
+                  <input class="visually-hidden input-field" type="radio" name="tariff-type" value="slim" checked />
                   <span class="control__mark"></span>
-                  <span class="form-inscription control__discrip">Похудение</span>
+                  <span class="form-data control__discrip">Похудение</span>
                 </label>
               </li>
-              <li class="list-type__item">
-                <label class="list-type__label control">
-                  <input class="visually-hidden list-type__input input input--radio" type="radio" name="tariff-type" value="pro" />
+              <li class="survey-animal__item">
+                <label class="survey-animal__label control control--radio">
+                  <input class="visually-hidden input-field" type="radio" name="tariff-type" value="pro" />
                   <span class="control__mark"></span>
-                  <span class="form-inscription control__discrip">Набор массы</span>
+                  <span class="form-data control__discrip">Набор массы</span>
                 </label>
               </li>
-              <li class="list-type__item">
-                <label class="list-type__label control">
-                  <input class="visually-hidden list-type__input input input--radio" type="radio" name="tariff-type" value="noknow" />
+              <li class="survey-animal__item">
+                <label class="survey-animal__label control control--radio">
+                  <input class="visually-hidden input-field" type="radio" name="tariff-type" value="noknow" />
                   <span class="control__mark"></span>
-                  <span class="form-inscription control__discrip">Не знаю (Нужен ваш совет)</span>
+                  <span class="form-data control__discrip">Не знаю (Нужен ваш совет)</span>
                 </label>
               </li>
             </ul>
           </fieldset>
-          <fieldset class="selection-programm__contact-details">
-            <legend class="selection-programm__legend">
+          <fieldset class="survey-animal__fieldset">
+            <legend class="survey-animal__legend title title--sm">
               Контактные данные (владельца кота)
             </legend>
-            <div class="selection-programm__mail contact-mail">
-              <label class="contact-mail__label" for="mail">
-                <span class="contact-mail__title form-inscription">E-mail:*</span>
-                <input class="contact-mail__input input--email input" id="mail" type="email" name="e-mail" value="kuklachev@gmail.com" required />
+            <div class="survey-animal__characteristic survey-animal__characteristic--email">
+              <label class="survey-animal__label" for="email">
+                <span class="survey-animal__title form-data">E-mail:*</span>
+                <input class="survey-animal__input input-field--email input-field" id="email" type="email" name="e-mail" value="kuklachev@gmail.com" required />
               </label>
             </div>
-            <div class="selection-programm__phone contact-phone">
-              <label class="contact-phone__label" for="phone">
-                <span class="contact-phone__title form-inscription">Телефон:*</span>
-                <input class="contact-phone__input input--phone input" id="phone" type="tel" name="tel" value="8 (960) 900-60-90" required />
+            <div class="survey-animal__characteristic survey-animal__characteristic--phone">
+              <label class="survey-animal__label" for="phone">
+                <span class="survey-animal__title form-data">Телефон:*</span>
+                <input class="survey-animal__input input-field--phone input-field" id="phone" type="tel" name="tel" value="8 (960) 900-60-90" required />
               </label>
             </div>
           </fieldset>
-          <fieldset class="selection-programm__comments">
-            <legend class="selection-programm__legend">Комментарий</legend>
-            <div class="selection-programm__animal-information animal-information">
-              <label class="animal-information__label" for="comments">
+          <fieldset class="survey-animal__fieldset">
+            <legend class="survey-animal__legend title title--sm">Комментарий</legend>
+            <div class="survey-animal__characteristic survey-animal__characteristic--comments">
+              <label class="survey-animal__label" for="comments">
                 <span class="visually-hidden">Ваш комментарий:</span>
               </label>
-              <textarea class="animal-information__text comments-text" id="comments" rows="8" name="comments" placeholder="Расскажите обо всех повадках кота" required></textarea>
+              <textarea class="survey-animal__input input-field input-field--textarea" id="comments" rows="8" name="comments" placeholder="Расскажите обо всех повадках кота" required></textarea>
             </div>
           </fieldset>
-          <fieldset class="selection-programm__additionally">
-            <legend class="selection-programm__legend">Дополнительно</legend>
-            <ul class="selection-programm__list additionally">
-              <li class="additionally__item">
-                <label class="additionally__label control" for="sweetener">
-                  <input class="visually-hidden input input--checkbox" type="checkbox" id="sweetener" name="sweetener" checked />
-                  <span class="selection-programm__mark"></span>
-                  <span class="form-inscription control__discrip">Сахарозаменитель</span>
+          <fieldset class="survey-animal__fieldset">
+            <legend class="survey-animal__legend title title--sm">Дополнительно</legend>
+            <ul class="survey-animal__list list list--buy">
+              <li class="survey-animal__item">
+                <label class="survey-animal__label control control--checkbox" for="sweetener">
+                  <input class="visually-hidden" type="checkbox" id="sweetener" name="sweetener" checked />
+                  <span class="control__mark"></span>
+                  <span class="form-data control__discrip">Сахарозаменитель</span>
                 </label>
               </li>
-              <li class="additionally__item">
-                <label class="additionally__label control" for="water">
-                  <input class="visually-hidden input input--checkbox" type="checkbox" id="water" name="sweetener" checked />
-                  <span class="selection-programm__mark"></span>
-                  <span class="form-inscription control__discrip">Питьевая вода</span>
+              <li class="survey-animal__item">
+                <label class="survey-animal__label control control--checkbox" for="water">
+                  <input class="visually-hidden" type="checkbox" id="water" name="sweetener" checked />
+                  <span class="control__mark"></span>
+                  <span class="form-data control__discrip">Питьевая вода</span>
                 </label>
               </li>
-              <li class="additionally__item">
-                <label class="additionally__label control" for="milk">
-                  <input class="visually-hidden input input--checkbox" type="checkbox" id="milk" name="sweetener" checked />
-                  <span class="selection-programm__mark"></span>
-                  <span class="form-inscription control__discrip">Молоко</span>
+              <li class="survey-animal__item">
+                <label class="survey-animal__label control control--checkbox" for="milk">
+                  <input class="visually-hidden" type="checkbox" id="milk" name="sweetener" checked />
+                  <span class="control__mark"></span>
+                  <span class="form-data control__discrip">Молоко</span>
                 </label>
               </li>
-              <li class="additionally__item">
-                <label class="additionally__label control" for="vitamins">
-                  <input class="visually-hidden input input--checkbox" type="checkbox" id="vitamins" name="sweetener" checked />
-                  <span class="selection-programm__mark"></span>
-                  <span class="form-inscription control__discrip">Витамины</span>
+              <li class="survey-animal__item">
+                <label class="survey-animal__label control control--checkbox" for="vitamins">
+                  <input class="visually-hidden" type="checkbox" id="vitamins" name="sweetener" checked />
+                  <span class="control__mark"></span>
+                  <span class="form-data control__discrip">Витамины</span>
                 </label>
               </li>
             </ul>
@@ -176,30 +176,32 @@
           </button>
           <p class="selection-programm__necessarily">* — Обязательные поля</p>
         </form>
+
       </div>
     </section>
     <section class="address">
-      <div class="address__container">
-        <h3 class="address__title">ПРИГЛАШАЕМ К СОТРУДНИЧЕСТВУ ДИЛЕРОВ!</h3>
-        <address class="address__location">
-          ул. Большая Конюшенная, д. 19/8 Санкт-Петербург
-        </address>
-        <!-- <img
-            class="address__location"
-            src="images/location.jpg"
-            alt="Карта местоположения Cat Energy!"
-            width="320"
-            height="362"
-          /> -->
-        <iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3A5bcbdd1e43705df5175867bc851a8bea1567a8a1c5d960b0e6033b16215a73a1&amp;source=constructor" width="320" height="362"></iframe>
+      <div class="container">
+        <div class="address__container">
+          <h2 class="visually-hidden">Адрес офиса</h2>
+          <h3 class="address__title">ПРИГЛАШАЕМ К СОТРУДНИЧЕСТВУ ДИЛЕРОВ!</h3>
+          <address class="address__location">
+            ул. Большая Конюшенная, д. 19/8 Санкт-Петербург
+          </address>
+          <!-- <picture>
+            <source width="1440" height="400" type="image/png" media="(min-width: 1440px)" srcset=" 1x,  2x">
+            <source width="768" height="400" type="image/png" media="(min-width: 768px)" srcset=" 1x,  2x">
+            <img class="address__image" src="" srcset=" 2x" alt="Карта с местоположением Cat Energy." width="320" height="362">
+          </picture> -->
+          <iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3A5bcbdd1e43705df5175867bc851a8bea1567a8a1c5d960b0e6033b16215a73a1&amp;source=constructor" width="320" height="362"></iframe>
+        </div>
       </div>
     </section>
   </main>
 
   <footer class="page__footer main-footer">
-    <div class="main-footer__container">
+    <div class="container">
       <div class="main-footer__logo">
-        <a class="main-footer__second-logo-image second-logo-image" href="index.html" aria-label="второй логотип">
+        <span class="main-footer__second-logo-image logo-second logo-second--footer">
           <svg xmlns="http://www.w3.org/2000/svg" width="128" height="24" viewBox="0 0 128 24" fill="none">
             <path d="M1.6236 21.9574C0.489608 20.2815 -0.0733133 18.2722 0.0213584 16.2383V7.7617C-0.115966 5.70593 0.411707 3.66097 1.52346 1.94043C2.62499 0.612766 4.32737 0 6.83086 0C9.33436 0 10.9366 0.612766 11.938 1.73617C13.0252 3.15904 13.56 4.9407 13.4401 6.74043V8.78298H8.53324V6.43404C8.57287 5.73932 8.47057 5.04378 8.23282 4.39149C8.10574 4.12819 7.90433 3.90969 7.65449 3.76409C7.40465 3.61849 7.11781 3.55245 6.83086 3.57447C6.12989 3.57447 5.62919 3.77872 5.42891 4.28936C5.20237 5.015 5.10073 5.77516 5.12849 6.53617V17.4638C5.0756 18.2022 5.21373 18.9417 5.52905 19.6085C5.72933 20.1191 6.23003 20.3234 6.931 20.3234C7.63198 20.3234 8.03254 20.1191 8.23282 19.6085C8.4605 18.9183 8.56232 18.1914 8.53324 17.4638V15.0128H13.4401V17.0553C13.5419 18.8844 13.0103 20.6918 11.938 22.1617C10.9366 23.3872 9.23422 24 6.83086 24C4.42751 23.8979 2.62499 23.2851 1.6236 21.9574Z" fill="#111111" />
             <path d="M19.3483 0.306396H25.0563L29.2622 23.5915H24.6557L23.8546 18.6894H20.55L19.7489 23.5915H15.0423L19.3483 0.306396ZM23.454 15.6255L22.2524 6.53618L21.0507 15.6255H23.454Z" fill="#111111" />
@@ -211,7 +213,7 @@
             <path d="M102.865 21.8554C101.824 20.0697 101.335 18.0053 101.463 15.932V8.17025C101.438 6.69026 101.607 5.21349 101.964 3.77876C102.299 2.70664 102.967 1.77469 103.866 1.12344C104.984 0.448453 106.274 0.128462 107.571 0.204291C109.674 0.204291 111.177 0.714929 112.078 1.83833C113.115 3.32172 113.61 5.12795 113.48 6.94472V7.76174H110.476V7.04684C110.48 6.19152 110.413 5.33736 110.275 4.49365C110.191 3.96049 109.903 3.48313 109.474 3.16599C108.911 2.78921 108.243 2.60993 107.571 2.65535C106.853 2.60843 106.143 2.82587 105.569 3.26812C105.333 3.47055 105.141 3.71989 105.003 4.00086C104.865 4.28184 104.785 4.58853 104.768 4.90216C104.636 5.81517 104.569 6.73673 104.567 7.65961V16.3405C104.493 17.663 104.698 18.9863 105.168 20.2213C105.569 21.0383 106.37 21.3447 107.571 21.3447C108.046 21.405 108.527 21.3208 108.955 21.1028C109.383 20.8847 109.737 20.5425 109.975 20.1192C110.504 18.8277 110.743 17.432 110.676 16.0341V14.4H107.772V12.0511H113.58V23.5915H111.577L111.277 20.9362C111.014 21.8261 110.467 22.601 109.724 23.1376C108.98 23.6742 108.081 23.9419 107.171 23.8979C106.343 23.9475 105.517 23.7869 104.765 23.4304C104.014 23.0739 103.361 22.5327 102.865 21.8554V21.8554Z" fill="#111111" />
             <path d="M119.989 15.4212L115.082 0.408447H118.086L121.591 11.6425L124.996 0.408447H128L123.093 15.4212V23.5914H120.089V15.4212H119.989Z" fill="#111111" />
           </svg>
-        </a>
+        </span>
       </div>
       <div class="main-footer__social-media social-media">
         <ul class="social-media__list">
@@ -246,7 +248,7 @@
           <span>HTML Academy</span>
         </a>
         <a class="copyright__image" href="https://htmlacademy.ru/intensive/adaptive" aria-label="логотип академии">
-          <svg xmlns="http://www.w3.org/2000/svg" width="27" height="34" viewBox="0 0 27 34" fill="none">
+          <svg aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="27" height="34" viewBox="0 0 27 34" fill="none">
             <path d="M13.6426 0.0157537L13.5 0L0 1.40733V26.0129L13.5 34L27 26.0129V1.40733L13.6426 0.0157537ZM25.2344 25.0151L13.5 31.9573L1.76561 25.0151V14.9293L13.4507 21.8451L13.4701 23.0984L5.45351 18.3548L5.44295 19.5801L13.4894 24.3885L13.5088 25.675L5.46408 20.9174L5.45351 22.1427L13.5 26.9511L21.6239 22.1182V20.8929V16.909L25.2432 14.7595L25.2344 25.0151ZM25.2344 13.4519L22.0147 15.3319L20.5325 16.2071L13.4666 12.0201L13.456 13.2454L19.4957 16.818L19.4429 16.8495L19.3126 16.9247L18.4536 17.4166L13.4666 14.4689L13.456 15.6942L17.3921 18.0222L16.4591 18.6314L16.438 18.6436L13.4666 16.902L13.456 18.1273L15.4029 19.2615L13.4155 20.4483L1.7973 13.5762L13.4349 6.61831L25.2344 13.4519ZM25.2344 12.2266L13.4401 5.31075L1.76561 12.2196V2.9897L13.5 1.76442L25.2344 2.9897V12.2266Z" fill="#666666" />
           </svg>
         </a>
