@@ -1,0 +1,76 @@
+.survey-animal {
+
+}
+
+.survey-animal__fieldset {
+
+}
+
+.survey-animal__characteristic {
+  &--name {
+
+  }
+
+  &--weight {
+
+  }
+
+  &--age {
+
+  }
+
+  &--email {
+
+  }
+
+  &--phone {
+
+  }
+
+  &--comments {
+
+  }
+}
+
+.survey-animal__label {
+  font-family: $primary-font;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 18px;
+  text-transform: uppercase;
+}
+
+.survey-animal__title {
+  font-family: $primary-font;
+  color: $charcoal-color;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 18px;
+  text-transform: uppercase;
+}
+
+.survey-animal__input {
+  font-family: $primary-font;
+  color: $charcoal-color;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 18px;
+}
+
+.survey-animal__list {
+
+}
+
+.survey-animal__item {
+
+}
+
+.survey-animal__legend {
+  font-family: $primary-font;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 26px;
+}

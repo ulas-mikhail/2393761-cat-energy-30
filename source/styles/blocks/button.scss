@@ -1,0 +1,22 @@
+.button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-family: $secondary-font;
+  font-size: 16px;
+  line-height: 20px;
+  text-transform: uppercase;
+  text-decoration: none;
+  border: 0;
+  cursor: pointer;
+
+  &--primary {
+    background-color: $primary-color;
+    color: #ffffff;
+  }
+
+  &--secondary {
+    background-color: $secondary-color;
+    color: #444444;
+  }
+}

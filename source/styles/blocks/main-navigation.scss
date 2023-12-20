@@ -1,0 +1,34 @@
+.main-navigation {
+  display: flex;
+  flex-direction: column;
+}
+
+.main-navigation__toggle {
+  display: inline-flex;
+}
+
+.main-navigation__wrapper {
+
+}
+
+.main-navigation__list {
+
+}
+
+.main-navigation__item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  &--current {
+
+  }
+}
+
+.main-navigation__link {
+  font-size: 20px;
+  line-height: 20px;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: #000000;
+}

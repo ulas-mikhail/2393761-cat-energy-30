@@ -1,0 +1,20 @@
+.title {
+  font-family: $primary-font;
+  margin: 0;
+  padding: 0;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 36px;
+
+  &--tiny {
+    font-size: 16px;
+  }
+
+  &--sm {
+    font-size: 24px;
+  }
+
+  &--medium {
+    font-size: 36px;
+  }
+}

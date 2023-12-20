@@ -1,0 +1,38 @@
+.product-card {
+  line-height: 37px;
+  background-color: $secondary-color;
+
+  &p--slim {
+  }
+
+  &--pro {
+  }
+}
+
+.product-card__title {
+  font-family: $primary-font;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 37px;
+  text-transform: uppercase;
+}
+
+.product-card__desc {
+  color: $charcoal-color;
+  font-family: $secondary-font;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 18px;
+}
+
+.product-card__link {
+  font-family: $primary-font;
+  text-align: center;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 16px;
+  text-transform: uppercase;
+}
