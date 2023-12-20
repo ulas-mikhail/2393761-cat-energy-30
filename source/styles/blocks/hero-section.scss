@@ -8,10 +8,20 @@
 
 .hero-section__title {
 
+  color: $white-color;
+  background-color: $primary-color;
 }
-.hero-section__desc {
 
+.hero-section__desc {
+  font-size: 14px;
+  color: $white-color;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 14px;
+  text-transform: uppercase;
+  background-color: $primary-color;
 }
+
 .hero-section__link {
 
 }

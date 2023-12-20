@@ -1,13 +1,18 @@
 .promo-section {
-
+  background-color: $white-color;
 }
 
 .promo-section__title {
-
+  font-family: $primary-font;
+  text-align: center;
+  font-size: 36px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 40px;
 }
 
 .promo-section__list {
-
+  list-style-type: none;
 }
 
 .promo-section__item {
@@ -15,5 +20,9 @@
 }
 
 .promo-section__desc {
-
+  font-family: $secondary-font;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 18px;
 }

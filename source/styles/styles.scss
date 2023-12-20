@@ -1,8 +1,9 @@
 /* GLOBAL */
-@import "./global/mixins.scss";
 @import "./global/variables.scss";
-@import "./global/visually-hidden.scss";
+@import "./global/mixins.scss";
 @import "./global/fonts.scss";
+@import "./global/visually-hidden.scss";
+@import "./global/global.scss";
 @import "./global/custom-br.scss";
 
 /* BLOCKS */
@@ -15,7 +16,6 @@
 @import "./blocks/reviews-toggle.scss";
 @import "./blocks/promo-section.scss";
 @import "./blocks/product-card.scss";
-@import "./blocks/navigation-list.scss";
 @import "./blocks/main-index.scss";
 @import "./blocks/main-form.scss";
 @import "./blocks/main-catalog.scss";
@@ -35,8 +35,6 @@
 @import "./blocks/survey-animal.scss";
 @import "./blocks/input-field.scss";
 @import "./blocks/list.scss";
-@import "./blocks/additional-product-card-item.scss";
-@import "./blocks/additional-product.scss";
 @import "./blocks/banner-action.scss";
 @import "./blocks/card-more.scss";
 @import "./blocks/card.scss";

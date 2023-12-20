@@ -1,9 +1,9 @@
 /* здесь подключите шрифты*/
-$primary-font: "Lato", "arial", sans-serif;
-$secondary-font: "Oswald", "arial", sans-serif;
+$primary-font: "Oswald", sans-serif;
+$secondary-font: "Lato", sans-serif;
 
-@include font-face("Lato", 400, normal, url("../../fonts/Lato/Lato-regular.woff2") format("woff2"));
-@include font-face("Oswald", 400, normal, url("../../fonts/oswald/Oswald-regular.woff2") format("woff2"));
+@include font-face("Lato",400, normal, url("../../fonts/lato/Lato-regular.woff2") format("woff2"));
+@include font-face("Oswald",400, normal, url("../../fonts/oswald/Oswald-regular.woff2") format("woff2"));
 
 // @font-face {
 //   font-family: "Oswald";
