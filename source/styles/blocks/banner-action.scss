@@ -1,5 +1,5 @@
 .banner-action {
-
+  background-color: $primary-color;
 }
 
 .banner-action__image-link {
@@ -7,5 +7,11 @@
 }
 
 .banner-action__desc {
-
+  font-family: $secondary-font;
+  color: $white-color;
+  text-align: center;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 20px;
 }
