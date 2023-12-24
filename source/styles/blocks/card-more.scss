@@ -1,5 +1,12 @@
 .card-more {
-
+  &::before {
+    content: " ";
+    display: block;
+    width: 30px;
+    height: 30px;
+    background-image: url("../../images/icons/stack.svg#plus_card_more");
+    background-size: 30px 30px;
+  }
 }
 
 .card-more__image {

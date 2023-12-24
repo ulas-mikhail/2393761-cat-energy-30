@@ -1,5 +1,5 @@
 .hero-section {
-
+  color: $white-color;
 }
 
 .hero-section__container {
@@ -9,7 +9,6 @@
 .hero-section__title {
 
   color: $white-color;
-  background-color: $primary-color;
 }
 
 .hero-section__desc {
@@ -19,7 +18,6 @@
   font-weight: 400;
   line-height: 14px;
   text-transform: uppercase;
-  background-color: $primary-color;
 }
 
 .hero-section__link {

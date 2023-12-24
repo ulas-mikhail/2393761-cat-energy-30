@@ -16,7 +16,54 @@
 }
 
 .promo-section__item {
+  &--leaf::before {
+    content: "";
+    display: block;
+    background-image: url("../../images/icons/stack.svg#leaf");
+    background-size: 30px 32px;
+    background-repeat: no-repeat;
+    width: 60px;
+    height: 60px;
+    background-color: $primary-color;
+    background-position: center;
+  }
 
+  &--boiling-water::before {
+    content: "";
+    display: block;
+    background-image: url("../../images/icons/stack.svg#boiling_water");
+    background-size: 27px 29px;
+    background-repeat: no-repeat;
+    width: 60px;
+    height: 60px;
+    background-color: $primary-color;
+    background-position: center;
+  }
+
+  &--fork-knife::before {
+    content: "";
+    display: block;
+    background-image: url("../../images/icons/stack.svg#fork_knife");
+    background-size: 26px 30px;
+    background-repeat: no-repeat;
+    background-color: $primary-color;
+    width: 60px;
+    height: 60px;
+    background-position: center;
+  }
+
+
+  &--alarm-clock::before {
+    content: "";
+    display: block;
+    background-image: url("../../images/icons/stack.svg#alarm_clock");
+    background-size: 27px 31px;
+    background-repeat: no-repeat;
+    background-color: $primary-color;
+    width: 60px;
+    height: 60px;
+    background-position: center;
+  }
 }
 
 .promo-section__desc {

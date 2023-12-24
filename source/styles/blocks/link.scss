@@ -8,6 +8,18 @@
     color: #222222;
   }
 
+  &--arrow::after {
+    content: " ";
+    display: block;
+    width: 32px;
+    height: 10px;
+    background-image: url("../../images/icons/stack.svg#icon_arrow");
+    background-size: 32px 10px;
+    position: relative;
+    right: -130px;
+    bottom: 20px;
+  }
+
   &--product {
 
   }
