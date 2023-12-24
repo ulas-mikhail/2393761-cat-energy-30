@@ -5,7 +5,33 @@
   text-decoration: none;
 
   &--arrow {
+
+    position: relative;
+    padding-right: 10px;
     color: #222222;
+    cursor: pointer;
+  }
+
+  &--arrow::after {
+    content: " ";
+    display: block;
+    width: 40px;
+    height: 40px;
+    background-image: url("../../images/icons/stack.svg#icon_arrow");
+    background-position: -8px;
+    background-repeat: no-repeat;
+    position: absolute;
+    right: -50px;
+    bottom: -10px;
+    transition: 0.3s ease-in-out;
+  }
+
+  &:hover::after {
+    background-position: 0;
+  }
+
+  &:active {
+    opacity: 0.6;
   }
 
   &--product {

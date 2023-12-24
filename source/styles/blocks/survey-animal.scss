@@ -33,12 +33,20 @@
 }
 
 .survey-animal__label {
+  display: flex;
+  align-items: center;
   font-family: $primary-font;
   font-size: 16px;
   font-style: normal;
   font-weight: 400;
   line-height: 18px;
   text-transform: uppercase;
+  height: 40px;
+  width: 280px;
+
+  &--email {
+
+  }
 }
 
 .survey-animal__title {
@@ -57,6 +65,8 @@
   font-style: normal;
   font-weight: 400;
   line-height: 18px;
+  height: 40px;
+  margin-left: auto;
 }
 
 .survey-animal__list {
@@ -73,4 +83,16 @@
   font-style: normal;
   font-weight: 400;
   line-height: 26px;
+}
+
+.survey-animal__icon {
+  &--message {
+    position: relative;
+    left: -20px;
+  }
+
+  &--phone {
+    position: relative;
+    left: -20px;
+  }
 }

@@ -1,0 +1,41 @@
+.demo-range {
+  width: 57px;
+  height: 334px;
+  position: relative;
+  transition: 0.2s ease-in-out;
+  color: #666666;
+  background-color: transparent;
+  border: none;
+  padding: 0;
+}
+
+.demo-range::before {
+  content: " ";
+  display: block;
+  position: absolute;
+  width: 4px;
+  border-radius: 4px;
+  height: 100%;
+  background-color: #666666;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  z-index: -1;
+  transition: 0.2s ease-in-out;
+}
+
+.demo-range:hover {
+  color: #68b738;
+}
+
+.demo-range:hover::before {
+  background-color: #68b738;
+}
+
+.demo-range:active {
+  color: #5eaa2f;
+}
+
+.demo-range:active::before {
+  background-color: #5eaa2f;
+}

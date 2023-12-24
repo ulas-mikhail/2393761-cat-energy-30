@@ -3,9 +3,12 @@
 }
 
 .copyright__link {
+  display: inline;
   text-decoration: none;
   cursor: pointer;
-  color: inherit;
+  width: 27px;
+  height: 34px;
+  color: $charcoal-color;
 }
 
 .copyright__image {

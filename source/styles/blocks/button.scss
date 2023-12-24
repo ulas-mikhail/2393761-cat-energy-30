@@ -1,5 +1,5 @@
 .button {
-  display: inline-flex;
+  display: inline-block;
   align-items: center;
   justify-content: center;
   font-family: $secondary-font;
@@ -10,13 +10,31 @@
   border: 0;
   cursor: pointer;
 
+
   &--primary {
     background-color: $primary-color;
     color: #ffffff;
+    padding: 10px 44px;
   }
 
   &--secondary {
     background-color: $secondary-color;
     color: #444444;
+  }
+
+  &:hover {
+    background-color: $primary-button;
+  }
+
+  &:active {
+    background-color: rgba(255, 255, 255, 0.3);
+  }
+
+  @include vp-tablet {
+    padding: 14px 26px;
+  }
+
+  @include vp-desktop {
+    padding: 14px 26px;
   }
 }

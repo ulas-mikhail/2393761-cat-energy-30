@@ -7,3 +7,26 @@
     src: $font-src;
   }
 }
+
+@mixin vp-tablet() {
+  @media (min-width: $breakpoint-tablet) {
+    @content;
+  }
+}
+
+@mixin vp-desktop() {
+  @media (min-width: $breakpoint-desktop) {
+    @content;
+  }
+}
+
+@mixin icon-psevdo ($bg-image-scr, $icon-color, $icon-width, $icon-height) {
+  content: "";
+  display: inline-block;
+  background-image: $bg-image-scr;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-color: $icon-color;
+  width: $icon-width;
+  height: $icon-height;
+}
