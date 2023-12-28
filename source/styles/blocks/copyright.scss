@@ -3,14 +3,33 @@
 }
 
 .copyright__link {
-  display: inline;
+  display: flex;
   text-decoration: none;
+  align-items: center;
+  font-size: 16px;
+  line-height: 20px;
   cursor: pointer;
-  width: 27px;
-  height: 34px;
+  // width: 27px;
+  // height: 34px;
   color: $charcoal-color;
 }
 
-.copyright__image {
+.copyright__name {
+  margin-right: auto;
 
+  &:active {
+    opacity: 0.3;
+  }
+}
+
+.copyright__image {
+  &:hover,
+  &:focus-visible {
+    color: $primary-color;
+  }
+
+  &:active {
+    color: $primary-color;
+    opacity: 0.3;
+  }
 }

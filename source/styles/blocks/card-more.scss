@@ -1,11 +1,15 @@
 .card-more {
+  padding: 25px 20px;
+
   &::before {
     content: " ";
     display: block;
     width: 30px;
     height: 30px;
     background-image: url("../../images/icons/stack.svg#plus_card_more");
-    background-size: 30px 30px;
+    background-repeat: no-repeat;
+    margin: auto;
+    margin-bottom: 23px;
   }
 }
 
@@ -18,7 +22,12 @@
 }
 
 .card-more__title {
-
+  color: $black;
+  line-height: 20px;
+  text-transform: uppercase;
+  text-align: center;
+  margin: 0;
+  margin-bottom: 8px;
 }
 
 .card-more__link {
@@ -28,5 +37,13 @@
 }
 
 .card-more__desc {
+  font-size: 12px;
+  line-height: 16px;
+  text-align: center;
+  margin: 0;
+}
 
+.card-more__button {
+  margin-top: 21px;
+  width: 100%;
 }

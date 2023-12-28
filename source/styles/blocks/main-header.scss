@@ -1,14 +1,69 @@
 .main-header {
+
   font-family: $secondary-font;
+  background-color: $white-color;
+  color: $primary-text;
+  position: relative;
+  width: auto;
+  padding: 13px 20px 15px;
+
+  &--psevdo::after {
+    content: " ";
+    display: block;
+    width: 100%;
+    height: 1px;
+    background-color: $secondary-color-line-psevdo;
+  }
 }
 
-.main-header__logo-container {
-  display: block;
+.main-header__container {
+  display: flex;
+  width: auto;
+  // justify-content: space-between;
+  flex-direction: row;
+  align-items: center;
+  list-style-type: none;
+  padding-top: 13px;
+  padding-bottom: 14px;
 }
+
+// .main-header__logo-all {
+//   flex-grow: 1;
+//   align-items: center;
+//   justify-content: space-between;
+
+
+//   &:hover,
+//   &:focus-visible {
+//     opacity: 0.8;
+//   }
+
+//   &:active {
+//     opacity: 0.6;
+//   }
+// }
 
 .main-header__first-logo-image {
-  border-bottom: 20px;
+  flex-grow: 1;
 }
 
 .main-header__second-logo-image {
+  flex-grow: 1;
+}
+
+
+.main-header__toggle {
+
+  flex: 1 1 auto;
+  margin: 0;
+
+  border: none;
+  background-image: url("../../images/icons/stack.svg#button_burger");
+  background-position: center;
+  background-size: 24px 24px;
+  background-repeat: no-repeat;
+  background-color: $white-color;
+  cursor: pointer;
+  box-sizing: border-box;
+  // padding: 24px 21px;
 }

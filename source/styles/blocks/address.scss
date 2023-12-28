@@ -1,9 +1,18 @@
 .address {
   background-color: $secondary-color;
+  line-height: 20px;
+
+  &--background {
+    background-color: $secondary-color;
+  }
 }
 
 .address__container {
   background-color: $white-color;
+  padding-top: 26px;
+  padding-bottom: 26px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
 }
 
 .address__title {
@@ -14,6 +23,7 @@
   font-weight: 400;
   line-height: 20px;
   text-transform: uppercase;
+  margin: 0;
 }
 
 .address__location {
@@ -23,4 +33,9 @@
   font-style: normal;
   font-weight: 400;
   line-height: 20px;
+}
+
+.address__map {
+  border: 0;
+  margin-bottom: -4.5px;
 }

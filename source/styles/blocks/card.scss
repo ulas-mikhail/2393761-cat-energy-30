@@ -1,9 +1,14 @@
 .card {
-
+  padding-top: 20px;
+  padding-bottom: 25px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
 }
 
 .card__image {
-
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .card__information {
@@ -13,6 +18,8 @@
 .card__title {
   font-size: 16px;
   line-height: 20px;
+  width: 100px;
+  margin-bottom: 14px;
 }
 
 .card__link {
@@ -21,6 +28,18 @@
 
 .card__desc {
 
+}
+
+.card__desc-wrapper {
+  display: flex;
+  flex-direction: column;
+}
+
+
+.card__button {
+  grid-column: 1/-1;
+  width: 100%;
+  margin-top: 17px;
 }
 
 .card-more__button {

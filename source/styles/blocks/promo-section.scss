@@ -1,5 +1,6 @@
 .promo-section {
   background-color: $white-color;
+  margin-bottom: 40px;
 }
 
 .promo-section__title {
@@ -9,13 +10,21 @@
   font-style: normal;
   font-weight: 400;
   line-height: 40px;
+  margin-bottom: 40px;
 }
 
 .promo-section__list {
   list-style-type: none;
+  display: grid;
+  gap: 20px;
 }
 
 .promo-section__item {
+  display: grid;
+  grid-template-columns: 60px 1fr;
+  column-gap: 20px;
+  row-gap: 20px;
+
   &--leaf::before {
     content: "";
     display: block;
@@ -32,7 +41,7 @@
     content: "";
     display: block;
     background-image: url("../../images/icons/stack.svg#boiling_water");
-    background-size: 27px 29px;
+    background-size: 26px 29px;
     background-repeat: no-repeat;
     width: 60px;
     height: 60px;
@@ -44,7 +53,7 @@
     content: "";
     display: block;
     background-image: url("../../images/icons/stack.svg#fork_knife");
-    background-size: 26px 30px;
+    background-size: 25px 30px;
     background-repeat: no-repeat;
     background-color: $primary-color;
     width: 60px;
@@ -57,7 +66,7 @@
     content: "";
     display: block;
     background-image: url("../../images/icons/stack.svg#alarm_clock");
-    background-size: 27px 31px;
+    background-size: 26px 31px;
     background-repeat: no-repeat;
     background-color: $primary-color;
     width: 60px;
@@ -68,8 +77,10 @@
 
 .promo-section__desc {
   font-family: $secondary-font;
+  color: $charcoal-color;
   font-size: 14px;
   font-style: normal;
   font-weight: 400;
   line-height: 18px;
+  margin: 0;
 }

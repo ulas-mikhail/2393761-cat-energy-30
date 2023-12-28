@@ -2,8 +2,10 @@
 $primary-font: "Oswald", sans-serif;
 $secondary-font: "Lato", sans-serif;
 
+$primary-text: #000000;
 $primary-color: #68b738;
 $secondary-color: #f2f2f2;
+$secondary-color-line-psevdo:#e6e6e6;
 $tertiary-color: #eaeaea;
 $primary-font: "lato", "arial", sans-serif;
 $secondary-font: "oswald", "arial", sans-serif;
@@ -11,7 +13,9 @@ $white-color:#ffffff;
 $charcoal-color:#444444;
 $black: #111111;
 $primary-button: #5eaa2f;
+$error-color: #ff8282;
 $social-color: #666666;
-
+$text-catalog-title: #222222;
+// Viewports
 $breakpoint-tablet:768px;
 $breakpoint-desktop:1440px;

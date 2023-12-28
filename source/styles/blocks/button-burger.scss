@@ -1,13 +1,17 @@
 .button-burger {
-  border: none;
-  height: 24px;
-  width: 24px;
-  background-image: url("../../images/icons/stack.svg#button_burger");
   background-position: center;
   background-size: 24px 24px;
   background-repeat: no-repeat;
-  // .button-burger--close {
-  //   background-image: url("../../images/icons/stack.svg#");
-  //   background-size: 18px 18px;
-  // }
+  background-image: url("../../images/icons/stack.svg#button_burger");
+  border: 0;
+  height: 24px;
+  width: 24px;
+  background-color: $transparent;
+
+
+  &--close {
+    background-image: url("../../images/icons/stack.svg#");
+    background-size: 18px 18px;
+    display: none;
+  }
 }

@@ -1,5 +1,16 @@
 .hero-section {
   color: $white-color;
+  min-height: 478px;
+  text-align: center;
+  background:
+    linear-gradient(rgba($primary-color, 0.85) 62.4%, rgba($primary-color, 0.85)),
+    image-set(
+      url("../../images/promo-background-mobil@1x.png") type("image/png") 1x,
+      url("../../images/promo-background-mobil@2x.png") type("image/png") 2x);
+  background-repeat: no-repeat;
+  background-position: top center;
+  margin-bottom: 20px;
+  background-size: cover;
 }
 
 .hero-section__container {
@@ -7,19 +18,24 @@
 }
 
 .hero-section__title {
-
   color: $white-color;
+  padding-top: 27px;
+  padding-bottom: 25px;
+  line-height: 36px;
 }
 
 .hero-section__desc {
+  font-family: $secondary-font;
   font-size: 14px;
   color: $white-color;
   font-style: normal;
   font-weight: 400;
   line-height: 14px;
   text-transform: uppercase;
+  margin: 0;
+  margin-bottom: 29px;
 }
 
-.hero-section__link {
-
+.hero-section__button {
+  margin-top: 3px;
 }

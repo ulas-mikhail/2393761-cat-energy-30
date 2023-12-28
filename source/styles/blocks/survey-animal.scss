@@ -3,10 +3,33 @@
 }
 
 .survey-animal__fieldset {
+  border: none;
+  padding: 0;
+  margin: 0;
 
+  &--psevdo::after {
+    content: " ";
+    display: block;
+    width: calc(100% + 40px);
+    height: 1px;
+    background-color: $secondary-color-line-psevdo;
+    margin-left: -20px;
+  }
+}
+
+.survey-animal__wrapper {
+  margin-top: 28px;
+  margin-bottom: 24px;
+
+  &--input {
+    display: grid;
+    gap: 14px;
+  }
 }
 
 .survey-animal__characteristic {
+  color: $charcoal-color;
+
   &--name {
 
   }
@@ -44,8 +67,12 @@
   height: 40px;
   width: 280px;
 
-  &--email {
-
+  &--input {
+    position: relative;
+    display: grid;
+    align-items: center;
+    grid-template-columns: minmax(0, max-content) auto;
+    gap: 13px;
   }
 }
 
@@ -67,14 +94,18 @@
   line-height: 18px;
   height: 40px;
   margin-left: auto;
+  padding-left: 25px;
 }
 
 .survey-animal__list {
-
+  &--type {
+    display: grid;
+    gap: 18px;
+  }
 }
 
 .survey-animal__item {
-
+  color: $charcoal-color;
 }
 
 .survey-animal__legend {
@@ -83,16 +114,21 @@
   font-style: normal;
   font-weight: 400;
   line-height: 26px;
+  margin-top: 24px;
+  margin-bottom: 7px;
 }
 
 .survey-animal__icon {
+  position: absolute;
+  top: 50%;
+  right: 12px;
+  transform: translateY(-50%);
+
   &--message {
-    position: relative;
-    left: -20px;
+
   }
 
   &--phone {
-    position: relative;
-    left: -20px;
+
   }
 }

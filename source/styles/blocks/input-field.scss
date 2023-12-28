@@ -3,9 +3,26 @@
   font-size: 16px;
   line-height: 18px;
   text-transform: uppercase;
-  width: 300px;
-  padding: 0;
-  padding-right: 30px;
+  width: 100%;
+  box-sizing: border-box;
+  padding: 14px 15px 13px 15px;
+  border: 1px solid #e7e7e7;
+
+  &:hover {
+    border: 1px solid #cdcdcd;
+  }
+
+  &:focus-visible {
+    border: 2px solid $charcoal-color;
+  }
+
+  &--error {
+    border: 2px solid $error-color;
+  }
+
+  &--error + .icon {
+    color: $error-color;
+  }
 
   &--name {
 
@@ -19,11 +36,16 @@
 
   }
 
-  &--email {
 
+  &--email {
+    padding-right: 33px;
+  }
+
+  &--phone {
+    padding-right: 33px;
   }
 
   &--textarea {
-
+    min-height: 150px;
   }
 }

@@ -1,5 +1,5 @@
 .alive-example {
-
+  background-color: $tertiary-color;
 }
 
 .alive-example__title {
@@ -9,6 +9,8 @@
   font-style: normal;
   font-weight: 400;
   line-height: 40px;
+  padding-top: 25px;
+  margin-bottom: 40px;
 }
 
 .alive-example__desc {
@@ -17,20 +19,25 @@
   font-style: normal;
   font-weight: 400;
   line-height: 18px;
+  margin: 0;
 }
 
 .alive-example__stats {
-
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 32px;
+  justify-content: center;
 }
 
 .alive-example__result {
+  margin: 0;
   font-family: $primary-color;
-  text-align: center;
   font-size: 14px;
   font-style: normal;
   font-weight: 400;
   line-height: 20px;
   text-transform: uppercase;
+  text-align: center;
 }
 
 .alive-example__compare-slider {

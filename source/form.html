@@ -16,7 +16,8 @@
 </head>
 
 <body class="page__body">
-  <header class="page__header main-header">
+  <header class="page__header main-header main-header--psevdo">
+    <div class="container"></div>
     <div class="main-header__logo-container">
       <a class="main-header__first-logo-image" href="index.html" aria-label="главная">
         <picture>
@@ -50,6 +51,7 @@
         </ul>
       </div>
     </nav>
+    </div>
   </header>
   <main class="page__main main-container main-form">
     <section class="selection-programm">
@@ -64,120 +66,130 @@
           </p>
         </div>
         <form class="selection-programm__form survey-animal" method="get" action="https://echo.htmlacademy.ru">
-          <fieldset class="survey-animal__fieldset">
+          <fieldset class="survey-animal__fieldset survey-animal__fieldset--psevdo">
             <legend class="visually-hidden ">Данные животного</legend>
-
-            <div class="survey-animal__characteristic survey-animal__characteristic--name">
-              <label class="survey-animal__label" for="animal-name">
-                <span class="survey-animal__title form-data">ИМЯ:*</span>
-                <input class="survey-animal__input input-field input-field--name" id="animal-name" type="text" name="selection-name" value="БАРСИК" />
-              </label>
-            </div>
-            <div class="survey-animal__characteristic survey-animal__characteristic--weight">
-              <label class="survey-animal__label" for="animal-weight">
-                <span class="survey-animal__title form-data">ВЕС (КГ):*</span>
-                <input class="survey-animal__input input-field input-field--weight" id="animal-weight" type="text" name="selection-weight" value="7" />
-              </label>
-            </div>
-            <div class="survey-animal__characteristic survey-animal__characteristic--age">
-              <label class="survey-animal__label" for="animal-age">
-                <span class="survey-animal__title form-data">ВОЗРАСТ (лет):</span>
-                <input class="survey-animal__input input-field input-field--age" id="animal-age" type="text" name="selection-age" value="7" />
-              </label>
+            <div class="survey-animal__wrapper survey-animal__wrapper--input">
+              <div class="survey-animal__characteristic survey-animal__characteristic--name">
+                <label class="survey-animal__label survey-animal__label--input" for="animal-name">
+                  <span class="survey-animal__title form-data">ИМЯ:*</span>
+                  <input class="survey-animal__input input-field input-field--name" id="animal-name" type="text" name="selection-name" value="БАРСИК" />
+                </label>
+              </div>
+              <div class="survey-animal__characteristic survey-animal__characteristic--weight">
+                <label class="survey-animal__label survey-animal__label--input" for="animal-weight">
+                  <span class="survey-animal__title form-data">ВЕС (КГ):*</span>
+                  <input class="survey-animal__input input-field input-field--weight" id="animal-weight" type="text" name="selection-weight" value="7" />
+                </label>
+              </div>
+              <div class="survey-animal__characteristic survey-animal__characteristic--age">
+                <label class="survey-animal__label survey-animal__label--input" for="animal-age">
+                  <span class="survey-animal__title form-data">ВОЗРАСТ (лет):</span>
+                  <input class="survey-animal__input input-field input-field--age" id="animal-age" type="text" name="selection-age" value="7" />
+                </label>
+              </div>
             </div>
           </fieldset>
-          <fieldset class="survey-animal__fieldset">
+          <fieldset class="survey-animal__fieldset survey-animal__fieldset--psevdo">
             <legend class="visually-hidden">
               Тип программы
             </legend>
-            <ul class="survey-animal__list list list--type">
-              <li class="survey-animal__item">
-                <label class="survey-animal__label control control--radio">
-                  <input class=" visually-hidden input-field" type="radio" name="tariff-type" value="slim" checked />
-                  <span class="control__mark"></span>
-                  <span class="form-data control__discrip">Похудение</span>
-                </label>
-              </li>
-              <li class="survey-animal__item">
-                <label class="survey-animal__label control control--radio">
-                  <input class="visually-hidden input-field" type="radio" name="tariff-type" value="pro" />
-                  <span class="control__mark"></span>
-                  <span class="form-data control__discrip">Набор массы</span>
-                </label>
-              </li>
-              <li class="survey-animal__item">
-                <label class="survey-animal__label control control--radio">
-                  <input class="visually-hidden input-field" type="radio" name="tariff-type" value="noknow" />
-                  <span class="control__mark"></span>
-                  <span class="form-data control__discrip">Не знаю (Нужен ваш совет)</span>
-                </label>
-              </li>
-            </ul>
+            <div class="survey-animal__wrapper">
+              <ul class="survey-animal__list list survey-animal__list--type">
+                <li class="survey-animal__item">
+                  <label class="survey-animal__label control control--radio">
+                    <input class=" visually-hidden control__input" type="radio" name="tariff-type" value="slim" checked />
+                    <span class="control__mark"></span>
+                    <span class="form-data control__discrip">Похудение</span>
+                  </label>
+                </li>
+                <li class="survey-animal__item">
+                  <label class="survey-animal__label control control--radio">
+                    <input class="visually-hidden control__input" type="radio" name="tariff-type" value="pro" />
+                    <span class="control__mark"></span>
+                    <span class="form-data control__discrip">Набор массы</span>
+                  </label>
+                </li>
+                <li class="survey-animal__item">
+                  <label class="survey-animal__label control control--radio">
+                    <input class="visually-hidden control__input" type="radio" name="tariff-type" value="noknow" />
+                    <span class="control__mark"></span>
+                    <span class="form-data control__discrip">Не знаю (Нужен ваш совет)</span>
+                  </label>
+                </li>
+              </ul>
+            </div>
           </fieldset>
-          <fieldset class="survey-animal__fieldset">
+
+          <fieldset class="survey-animal__fieldset ">
             <legend class="survey-animal__legend title title--sm">
               Контактные данные (владельца кота)
             </legend>
-            <div class="survey-animal__characteristic survey-animal__characteristic--email">
-              <label class="survey-animal__label survey-animal__label--email" for="email">
-                <span class="survey-animal__title form-data">E-mail:*</span>
-                <input class="survey-animal__input input-field--email input-field" id="email" type="email" name="e-mail" value="kuklachev@gmail.com" required />
-                <svg class="survey-animal__icon survey-animal__icon--message" width="20" height="20">
-                  <use href="images/icons/stack.svg#email-data"></use>
-                </svg>
-              </label>
-            </div>
-            <div class="survey-animal__characteristic survey-animal__characteristic--phone">
-              <label class="survey-animal__label" for="phone">
-                <span class="survey-animal__title form-data">Телефон:*</span>
-                <input class="survey-animal__input input-field--phone input-field" id="phone" type="tel" name="tel" value="8 (960) 900-60-90" required />
-                <svg class="survey-animal__icon survey-animal__icon--phone" width="20" height="20">
-                  <use href="images/icons/stack.svg#phone-data"></use>
-                </svg>
-              </label>
+            <div class="survey-animal__wrapper survey-animal__wrapper--input">
+              <div class="survey-animal__characteristic survey-animal__characteristic--email">
+                <label class="survey-animal__label survey-animal__label--input" for="email">
+                  <span class="survey-animal__title form-data">E-mail:*</span>
+                  <input class="survey-animal__input input-field--email input-field" id="email" type="email" name="e-mail" value="kuklachev@gmail.com" required />
+                  <svg class="survey-animal__icon survey-animal__icon--message icon" width="20" height="20">
+                    <use href="images/icons/stack.svg#email-data"></use>
+                  </svg>
+                </label>
+              </div>
+              <div class="survey-animal__characteristic survey-animal__characteristic--phone">
+                <label class="survey-animal__label survey-animal__label--input" for="phone">
+                  <span class="survey-animal__title form-data">Телефон:*</span>
+                  <input class="survey-animal__input input-field--phone input-field" id="phone" type="tel" name="tel" value="8 (960) 900-60-90" required />
+                  <svg class="survey-animal__icon survey-animal__icon--phone icon" width="20" height="20">
+                    <use href="images/icons/stack.svg#phone-data"></use>
+                  </svg>
+                </label>
+              </div>
             </div>
           </fieldset>
           <fieldset class="survey-animal__fieldset">
             <legend class="survey-animal__legend title title--sm">Комментарий</legend>
-            <div class="survey-animal__characteristic survey-animal__characteristic--comments">
-              <label class="survey-animal__label" for="comments">
-                <span class="visually-hidden">Ваш комментарий:</span>
-              </label>
-              <textarea class="survey-animal__input input-field input-field--textarea" id="comments" rows="8" name="comments" placeholder="Расскажите обо всех повадках кота" required></textarea>
+            <div class="survey-animal__wrapper">
+              <div class="survey-animal__characteristic survey-animal__characteristic--comments">
+                <label class="survey-animal__label" for="comments">
+                  <span class="visually-hidden">Ваш комментарий:</span>
+                </label>
+                <textarea class="survey-animal__input input-field input-field--textarea" id="comments" rows="8" name="comments" placeholder="Расскажите обо всех повадках кота" required></textarea>
+              </div>
             </div>
           </fieldset>
           <fieldset class="survey-animal__fieldset">
             <legend class="survey-animal__legend title title--sm">Дополнительно</legend>
-            <ul class="survey-animal__list list list--buy">
-              <li class="survey-animal__item">
-                <label class="survey-animal__label control control--checkbox" for="sweetener">
-                  <input class="visually-hidden" type="checkbox" id="sweetener" name="sweetener" checked />
-                  <span class="control__mark"></span>
-                  <span class="form-data control__discrip">Сахарозаменитель</span>
-                </label>
-              </li>
-              <li class="survey-animal__item">
-                <label class="survey-animal__label control control--checkbox" for="water">
-                  <input class="visually-hidden" type="checkbox" id="water" name="sweetener" checked />
-                  <span class="control__mark"></span>
-                  <span class="form-data control__discrip">Питьевая вода</span>
-                </label>
-              </li>
-              <li class="survey-animal__item">
-                <label class="survey-animal__label control control--checkbox" for="milk">
-                  <input class="visually-hidden" type="checkbox" id="milk" name="sweetener" checked />
-                  <span class="control__mark"></span>
-                  <span class="form-data control__discrip">Молоко</span>
-                </label>
-              </li>
-              <li class="survey-animal__item">
-                <label class="survey-animal__label control control--checkbox" for="vitamins">
-                  <input class="visually-hidden" type="checkbox" id="vitamins" name="sweetener" checked />
-                  <span class="control__mark"></span>
-                  <span class="form-data control__discrip">Витамины</span>
-                </label>
-              </li>
-            </ul>
+            <div class="survey-animal__wrapper">
+              <ul class="survey-animal__list list survey-animal__list--type">
+                <li class="survey-animal__item">
+                  <label class="survey-animal__label control control--checkbox" for="sweetener">
+                    <input class="visually-hidden control__input" type="checkbox" id="sweetener" name="sweetener" checked />
+                    <span class="control__mark"></span>
+                    <span class="form-data control__discrip">Сахарозаменитель</span>
+                  </label>
+                </li>
+                <li class="survey-animal__item">
+                  <label class="survey-animal__label control control--checkbox" for="water">
+                    <input class="visually-hidden control__input" type="checkbox" id="water" name="sweetener" />
+                    <span class="control__mark"></span>
+                    <span class="form-data control__discrip">Питьевая вода</span>
+                  </label>
+                </li>
+                <li class="survey-animal__item">
+                  <label class="survey-animal__label control control--checkbox" for="milk">
+                    <input class="visually-hidden control__input" type="checkbox" id="milk" name="sweetener" />
+                    <span class="control__mark"></span>
+                    <span class="form-data control__discrip">Молоко</span>
+                  </label>
+                </li>
+                <li class="survey-animal__item">
+                  <label class="survey-animal__label control control--checkbox" for="vitamins">
+                    <input class="visually-hidden control__input" type="checkbox" id="vitamins" name="sweetener" />
+                    <span class="control__mark"></span>
+                    <span class="form-data control__discrip">Витамины</span>
+                  </label>
+                </li>
+              </ul>
+            </div>
           </fieldset>
           <button class="selection-programm__button button button--primary" type="submit">
             Отправить заявку
@@ -187,7 +199,7 @@
 
       </div>
     </section>
-    <section class="address">
+    <section class="address address--background">
       <div class="container">
         <div class="address__container">
           <h2 class="visually-hidden">Адрес офиса</h2>
@@ -200,7 +212,7 @@
             <source width="768" height="400" type="image/png" media="(min-width: 768px)" srcset=" 1x,  2x">
             <img class="address__image" src="" srcset=" 2x" alt="Карта с местоположением Cat Energy." width="320" height="362">
           </picture> -->
-          <iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3A5bcbdd1e43705df5175867bc851a8bea1567a8a1c5d960b0e6033b16215a73a1&amp;source=constructor" width="320" height="362"></iframe>
+          <iframe class="address__map" src="https://yandex.ru/map-widget/v1/?um=constructor%3A5bcbdd1e43705df5175867bc851a8bea1567a8a1c5d960b0e6033b16215a73a1&amp;source=constructor" width="320" height="362"></iframe>
         </div>
       </div>
     </section>
@@ -252,8 +264,8 @@
       </div>
       <div class="main-footer__copyright copyright">
         <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">
-          <span>HTML Academy</span>
-          <svg aria-hidden="true" focusable="false" width="27" height="34">
+          <span class="copyright__name">HTML Academy</span>
+          <svg class="copyright__image" aria-hidden="true" focusable="false" width="27" height="34">
             <use href="images/icons/stack.svg#icon_html_academy"></use>
           </svg>
         </a>
