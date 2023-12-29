@@ -24,7 +24,8 @@
   }
 
   &:hover,
-  &:focus-visible, &:active {
+  &:focus-visible,
+  &:active {
     background-color: $secondary-color-line-psevdo;
   }
 
