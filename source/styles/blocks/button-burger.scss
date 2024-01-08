@@ -12,6 +12,9 @@
   &--close {
     background-image: url("../../images/icons/stack.svg#");
     background-size: 18px 18px;
-    display: none;
+
+    @media (min-width: $breakpoint-tablet) {
+      display: none;
+    }
   }
 }

@@ -19,7 +19,11 @@
     line-height: 36px;
   }
 
-  &--psevdo {
+  &--green-psevdo {
+
+  }
+
+  &--psevdo::after {
     content: " ";
     display: block;
     width: calc(100% + 40px);

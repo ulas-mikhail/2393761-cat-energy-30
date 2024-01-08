@@ -1,6 +1,6 @@
 .control {
   position: relative;
-  display: block;
+  display: inline-block;
   padding-left: 45px;
   cursor: pointer;
 
@@ -40,6 +40,7 @@
   }
 
   &[type="radio"]:checked + .control__mark::before {
+    content: "";
     position: absolute;
     top: 7px;
     left: 7px;
@@ -47,15 +48,14 @@
     height: 15px;
     background-color: $primary-color;
     border-radius: 50%;
-    content: "";
   }
 
   &:hover + .control__mark {
     border: 1px solid #bababa;
-    cursor: pointer;
   }
 
-  &:disabled + .control__mark {
+  &:disabled + .control__mark,
+  &:disabled ~ .control__discrip {
     opacity: 0.3;
     cursor: not-allowed;
   }

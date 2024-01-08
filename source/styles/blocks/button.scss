@@ -7,8 +7,8 @@
   line-height: 20px;
   text-transform: uppercase;
   text-decoration: none;
-  padding: 10px 44px;
   border: 0;
+  padding: 10px 44px;
   cursor: pointer;
 
 
@@ -16,23 +16,35 @@
     background-color: $primary-color;
     color: #ffffff;
     padding: 10px 44px;
+
+    &:hover,
+    &:focus-visible {
+      background-color: $secondary-color;
+    }
+
+    &:active {
+      color: rgba($white-color, 0.3);
+      background-color: $secondary-color;
+    }
+
+    @media (min-width: $breakpoint-tablet) {
+      padding: 14px 26px;
+      font-size: 20px;
+      line-height: 26px;
+    }
   }
 
   &--secondary {
     background-color: $secondary-color;
-    color: #444444;
+    color: $charcoal-color;
+
+    &:hover,
+    &:focus-visible,
+    &:active {
+      background-color: $secondary-color-line-psevdo;
+    }
   }
 
-  &:hover,
-  &:focus-visible,
-  &:active {
-    background-color: $secondary-color-line-psevdo;
-  }
-
-  &:active {
-    background-color: $secondary-color;
-    color: rgba($white-color, 0.3);
-  }
 
   @include vp-tablet {
     padding: 14px 26px;

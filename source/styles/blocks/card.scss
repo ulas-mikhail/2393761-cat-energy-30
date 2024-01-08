@@ -3,6 +3,10 @@
   padding-bottom: 25px;
   display: grid;
   grid-template-columns: 1fr 1fr;
+
+  &--psevdo {
+
+  }
 }
 
 .card__image {
@@ -30,11 +34,14 @@
 
 }
 
-.card__desc-wrapper {
+.card__wrapper-desc {
   display: flex;
   flex-direction: column;
 }
 
+.card__wrapper-psevdo {
+
+}
 
 .card__button {
   grid-column: 1/-1;

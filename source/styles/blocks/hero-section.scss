@@ -10,10 +10,22 @@
   background-repeat: no-repeat;
   background-position: top center;
   margin-bottom: 20px;
-  background-size: cover;
+  background-size: auto 302px;
 }
 
-.hero-section__container {
+.hero-section__container-background {
+
+}
+
+.hero-section__container-block {
+
+}
+
+.hero-section__container-box {
+
+}
+
+.hero-section__container-title {
 
 }
 
@@ -34,6 +46,19 @@
   text-transform: uppercase;
   margin: 0;
   margin-bottom: 29px;
+}
+
+.hero-section__container-button {
+
+}
+
+.hero-section__container-image {
+
+}
+
+.hero-section__picture {
+
+
 }
 
 .hero-section__button {

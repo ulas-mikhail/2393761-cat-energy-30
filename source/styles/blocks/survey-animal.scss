@@ -2,6 +2,10 @@
 
 }
 
+.survey-animal__wrapper-section {
+
+}
+
 .survey-animal__fieldset {
   border: none;
   padding: 0;
@@ -17,13 +21,29 @@
   }
 }
 
-.survey-animal__wrapper {
+.survey-animal__wrapper-label {
   margin-top: 28px;
   margin-bottom: 24px;
 
   &--input {
     display: grid;
     gap: 14px;
+  }
+
+  &--pick {
+
+  }
+
+  &--columns {
+
+  }
+
+  &--textarea {
+
+  }
+
+  &--checkbox {
+
   }
 }
 
@@ -131,4 +151,8 @@
   &--phone {
 
   }
+}
+
+.survey-animal__textarea {
+
 }

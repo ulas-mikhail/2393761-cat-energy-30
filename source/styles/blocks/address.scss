@@ -3,7 +3,11 @@
   line-height: 20px;
 
   &--background {
-    background-color: $secondary-color;
+    background-color: $black;
+  }
+
+  @media (min-width: $breakpoint-desktop) {
+    position: relative;
   }
 }
 
@@ -13,9 +17,28 @@
   padding-bottom: 26px;
   display: grid;
   grid-template-columns: 1fr 1fr;
+
+  @media (min-width: $breakpoint-tablet) {
+    padding: 61px 40px;
+  }
+
+  @media (min-width: $breakpoint-desktop) {
+    display: flex;
+    gap: 87px;
+    position: absolute;
+    z-index: 2;
+    left: 110px;
+    top: 95px;
+    background-color: $white-color;
+    padding: 61px 80px 60px;
+    width: 565px;
+    box-sizing: border-box;
+  }
 }
 
-.address__title {
+
+.address__desc {
+  grid-row: 1/-2;
   font-family: $primary-font;
   font-size: 16px;
   color: $black;
@@ -24,6 +47,21 @@
   line-height: 20px;
   text-transform: uppercase;
   margin: 0;
+  max-width: 140px;
+
+  @media (min-width: $breakpoint-tablet) {
+    font-size: 20px;
+    line-height: 26px;
+  }
+}
+
+.address__container-box {
+  max-width: 140px;
+  margin-left: auto;
+
+  @media (min-width: $breakpoint-tablet) {
+    max-width: 165px;
+  }
 }
 
 .address__location {
@@ -33,9 +71,52 @@
   font-style: normal;
   font-weight: 400;
   line-height: 20px;
+  text-decoration: none;
+
+  @media (min-width: $breakpoint-tablet) {
+    font-size: 16px;
+    text-align: end;
+
+    &:not(:last-child) {
+      margin-bottom: 19px;
+    }
+  }
+
+  @media (min-width: $breakpoint-desktop) {
+    text-align: start;
+  }
+}
+
+.address__container-map {
+  display: block;
+  position: relative;
+  z-index: 1;
+  border: 0;
+  width: 100%;
+  background:
+    image-set(
+      url("../../images/promo-bg--mobile@1x.jpg") type("image/jpg") 1x,
+      url("../../images/promo-bg--mobile@2x.jpg") type("image/jpg") 2x);
+
+  @media (min-width: $breakpoint-tablet) {
+    min-height: 400px;
+  }
 }
 
 .address__map {
-  border: 0;
-  margin-bottom: -4.5px;
+
+  margin-bottom: -5px;
+  width: 100%;
+
+  @media (min-width: $breakpoint-tablet) {
+    height: 400px;
+  }
+}
+
+.address__map-image {
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 0;
 }
