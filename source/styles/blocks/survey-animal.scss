@@ -3,7 +3,15 @@
 }
 
 .survey-animal__wrapper-section {
+  margin-bottom: 26px;
 
+  @media (min-width: $breakpoint-desktop) {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(570px, 1000px));
+    gap: 80px;
+    padding-top: 66px;
+    margin-bottom: 70px;
+  }
 }
 
 .survey-animal__fieldset {
@@ -11,41 +19,122 @@
   padding: 0;
   margin: 0;
 
-  &--psevdo::after {
+  &--psevdo {
+    @media (min-width: $breakpoint-tablet) {
+      border: 1px solid #e7e7e7;
+      margin-bottom: 65px;
+    }
+
+    @media (min-width: $breakpoint-desktop) {
+      margin-bottom: unset;
+    }
+  }
+
+  &--psevdo::after,
+  &--psevdo::before {
     content: " ";
     display: block;
     width: calc(100% + 40px);
     height: 1px;
     background-color: $secondary-color-line-psevdo;
     margin-left: -20px;
+
+    @media (min-width: $breakpoint-tablet) {
+      display: none;
+    }
   }
 }
 
+.survey-animal__legend {
+  display: inline-block;
+  line-height: 26px;
+  max-width: 190px;
+
+  @media (min-width: $breakpoint-tablet) {
+    line-height: 36px;
+    margin-bottom: 11px;
+    max-width: unset;
+  }
+}
+
+
 .survey-animal__wrapper-label {
-  margin-top: 28px;
-  margin-bottom: 24px;
+  padding-top: 35px;
+  padding-bottom: 25px;
+
+  @media (min-width: $breakpoint-tablet) {
+    padding-top: 65px;
+    padding-bottom: 65px;
+  }
+
+  @media (min-width: $breakpoint-desktop) {
+    padding: 0;
+  }
 
   &--input {
     display: grid;
     gap: 14px;
+
+    @media (min-width: $breakpoint-desktop) {
+      gap: 20px;
+    }
   }
 
   &--pick {
+    padding-top: 28px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
 
+    @media (min-width: $breakpoint-tablet) {
+      padding: 28px 27px 32px;
+      gap: 30px;
+    }
+
+    @media (min-width: $breakpoint-desktop) {
+      padding: 30px 27px 30px;
+    }
   }
 
   &--columns {
+    display: grid;
+    gap: 14px;
 
+    @media (min-width: $breakpoint-desktop) {
+      grid-template-columns: repeat(2, minmax(470px, 1000px));
+      gap: 80px;
+      padding-top: 65px;
+      padding-bottom: 70px;
+    }
   }
 
   &--textarea {
+    padding-top: 76px;
 
+    @media (min-width: $breakpoint-desktop) {
+      padding-top: 67px;
+      padding-bottom: 70px;
+    }
   }
 
   &--checkbox {
+    padding-top: 51px;
+    padding-bottom: 42px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
 
+    @media (min-width: $breakpoint-tablet) {
+      gap: 30px;
+    }
+
+    @media (min-width: $breakpoint-desktop) {
+      padding-top: 46px;
+      padding-bottom: 60px;
+    }
   }
 }
+
 
 .survey-animal__characteristic {
   color: $charcoal-color;
@@ -76,19 +165,10 @@
 }
 
 .survey-animal__label {
-  display: flex;
-  align-items: center;
-  font-family: $primary-font;
-  font-size: 16px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: 18px;
-  text-transform: uppercase;
-  height: 40px;
-  width: 280px;
+  color: $charcoal-color;
 
   &--input {
-    position: relative;
+
     display: grid;
     align-items: center;
     grid-template-columns: minmax(0, max-content) auto;
@@ -106,21 +186,37 @@
   text-transform: uppercase;
 }
 
+.survey-animal__wrapper-input {
+  position: relative;
+}
+
 .survey-animal__input {
-  font-family: $primary-font;
-  color: $charcoal-color;
-  font-style: normal;
-  font-weight: 400;
-  line-height: 18px;
-  height: 40px;
-  margin-left: auto;
   padding-left: 25px;
+  height: 45px;
+
+  @media (min-width: $breakpoint-tablet) {
+    height: 52px;
+  }
 }
 
 .survey-animal__list {
+  display: grid;
+  row-gap: 23px;
+
   &--type {
-    display: grid;
-    gap: 18px;
+
+  }
+
+  &--checkbox {
+    @media (min-width: $breakpoint-tablet) {
+      grid-template-columns: repeat(2, 1fr);
+      row-gap: 42px;
+      column-gap: 60px;
+    }
+
+    @media (min-width: $breakpoint-desktop) {
+      grid-template-columns: repeat(4, 1fr);
+    }
   }
 }
 
@@ -128,15 +224,6 @@
   color: $charcoal-color;
 }
 
-.survey-animal__legend {
-  font-family: $primary-font;
-  font-size: 24px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: 26px;
-  margin-top: 24px;
-  margin-bottom: 7px;
-}
 
 .survey-animal__icon {
   position: absolute;
@@ -154,5 +241,9 @@
 }
 
 .survey-animal__textarea {
+  min-height: 150px;
 
+  @media (min-width: $breakpoint-tablet) {
+    min-height: 175px;
+  }
 }

@@ -1,9 +1,33 @@
 .main-catalog {
-  background-color: $white-color;
+
 }
 
 .main-catalog__title {
   margin: 0;
   margin-top: 27px;
   line-height: 36px;
+
+  @media (min-width: $breakpoint-tablet) {
+    margin-top: 65px;
+    margin-bottom: 84px;
+    line-height: 60px;
+  }
+
+  @media (min-width: $breakpoint-desktop) {
+    margin-top: 74px;
+  }
+
+  &--psevdo::after {
+    content: " ";
+    display: block;
+    width: calc(100% + 40px);
+    height: 1px;
+    background-color: $secondary-color-line-psevdo;
+    margin-top: 41px;
+    margin-left: -20px;
+
+    @media (min-width: $breakpoint-tablet) {
+      display: none;
+    }
+  }
 }

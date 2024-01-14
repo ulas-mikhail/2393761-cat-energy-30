@@ -1,5 +1,8 @@
 .copyright {
-
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 10px;
 }
 
 .copyright__link {
@@ -10,6 +13,7 @@
   line-height: 20px;
   cursor: pointer;
   color: $charcoal-color;
+  pointer-events: none;
 
   &:hover .copyright__image,
   &:focus-visible .copyright__image {
@@ -26,8 +30,13 @@
 
 .copyright__name {
   margin-right: auto;
+  pointer-events: all;
 
   @media (min-width: $breakpoint-tablet) {
     margin-right: 28px;
   }
+}
+
+.copyright__image {
+  pointer-events: all;
 }

@@ -1,12 +1,17 @@
 .input-field {
   font-family: $secondary-font;
   font-size: 16px;
-  line-height: 18px;
   text-transform: uppercase;
   width: 100%;
   box-sizing: border-box;
   padding: 14px 15px 13px 15px;
   border: 1px solid #e7e7e7;
+
+  @media (min-width: $breakpoint-tablet) {
+    font-size: 20px;
+    line-height: normal;
+    padding: 14px 20px 13px;
+  }
 
   &:hover {
     border: 1px solid #cdcdcd;
@@ -14,13 +19,14 @@
 
   &:focus-visible {
     border: 2px solid $charcoal-color;
+    outline: none;
   }
 
   &--error {
     border: 2px solid $error-color;
   }
 
-  &--error + .icon {
+  &--error ~ .icon {
     color: $error-color;
   }
 
@@ -39,10 +45,9 @@
 
   &--icon {
     padding-right: 33px;
-  }
 
-
-  &--textarea {
-    min-height: 150px;
+    &:focus-visible ~ .icon {
+      color: $primary-color;
+    }
   }
 }

@@ -1,5 +1,6 @@
 .card-more {
-  padding: 25px 20px;
+  padding-top: 20px;
+  padding-bottom: 25px;
 
   &::before {
     content: " ";
@@ -10,10 +11,34 @@
     background-repeat: no-repeat;
     margin: auto;
     margin-bottom: 23px;
+
+    @media (min-width: $breakpoint-tablet) {
+      width: 60px;
+      height: 60px;
+      margin-bottom: 50px;
+    }
+
+    @media (min-width: $breakpoint-desktop) {
+      width: 60px;
+      height: 60px;
+      margin-bottom: 40px;
+    }
+  }
+
+  @media (min-width: $breakpoint-tablet) {
+    margin-top: 82px;
+    border: 2px solid $secondary-color;
+    min-height: 429px;
+    box-sizing: border-box;
+    padding: 50px 20px 40px;
   }
 }
 
 .card-more__container {
+  @media (min-width: $breakpoint-tablet) {
+    margin: auto;
+    width: 170px;
+  }
 }
 
 .card-more__image {
@@ -30,23 +55,45 @@
   text-transform: uppercase;
   text-align: center;
   margin: 0;
-  margin-bottom: 8px;
+
+  @media (min-width: $breakpoint-tablet) {
+    margin-bottom: 23px;
+    line-height: 24px;
+  }
 }
 
-.card-more__link {
-  text-decoration: none;
-  cursor: pointer;
-  color: inherit;
-}
+// .card-more__link {
+//   text-decoration: none;
+//   cursor: pointer;
+//   color: inherit;
+// }
 
 .card-more__desc {
   font-size: 12px;
   line-height: 16px;
   text-align: center;
   margin: 0;
+
+  @media (min-width: $breakpoint-tablet) {
+    font-size: 16px;
+    line-height: 18px;
+    margin-bottom: 82px;
+  }
 }
 
 .card-more__button {
   margin-top: 21px;
   width: 100%;
+
+  @media (min-width: $breakpoint-tablet) {
+    display: flex;
+    margin: auto;
+    width: 90%;
+  }
+
+  @media (min-width: $breakpoint-desktop) {
+    display: flex;
+    margin: auto;
+    width: 90%;
+  }
 }

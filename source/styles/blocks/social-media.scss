@@ -1,18 +1,31 @@
 .social-media {
-  color: $social-color;
+
 }
 
 .social-media__list {
   display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
   gap: 24px;
 }
 
 .social-media__item {
-
+  display: inline-flex;
 }
 
 .social-media__link {
+  display: inline-flex;
   color: $social-color;
+
+  &:hover,
+  &:focus-visible {
+    color: $primary-color;
+  }
+
+  &:active {
+    color: $primary-color;
+    opacity: 0.3;
+  }
 
   &--vkontakte {
 
@@ -27,14 +40,14 @@
   }
 }
 
-.social-media__icon {
-  &:hover,
-  &:focus-visible {
-    color: $primary-color;
-  }
+// .social-media__icon {
+//   &:hover,
+//   &:focus-visible {
+//     color: $primary-color;
+//   }
 
-  &:active {
-    color: $primary-color;
-    opacity: 0.4;
-  }
-}
+//   &:active {
+//     color: $primary-color;
+//     opacity: 0.4;
+//   }
+// }

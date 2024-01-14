@@ -1,11 +1,8 @@
 .main-header {
 
   font-family: $secondary-font;
-  background-color: $white-color;
-  color: $primary-text;
   position: relative;
-  width: auto;
-  padding: 13px 20px 15px;
+
 
   &--psevdo::after {
     content: " ";
@@ -13,37 +10,48 @@
     width: 100%;
     height: 1px;
     background-color: $secondary-color-line-psevdo;
+
+    @media (min-width: $breakpoint-tablet) {
+      display: none;
+    }
   }
 }
 
 .main-header__container {
-  display: flex;
-  width: auto;
+  @media (min-width: $breakpoint-tablet) {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 25px;
+    padding-bottom: 0;
+  }
 
-  justify-content: space-between;
-  flex-direction: row;
-  align-items: center;
-  list-style-type: none;
-  padding-top: 13px;
-  padding-bottom: 14px;
+  @media (min-width: $breakpoint-desktop) {
+    padding-top: 55px;
+  }
 }
 
 .main-header__container-block {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 13px;
+  padding-bottom: 14px;
 
-}
-
-.main-header__logo-all {
-  &:hover,
-  &:focus-visible {
-    opacity: 0.8;
-  }
-
-  &:active {
-    opacity: 0.6;
+  @media (min-width: $breakpoint-desktop) {
+    padding: 0;
   }
 }
+
 
 .main-header__logo {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  pointer-events: none;
+
   &:hover,
   &:focus-visible {
     opacity: 0.8;
@@ -56,23 +64,29 @@
 
 
 .main-header__logo-text {
+  color: $black;
+  pointer-events: all;
 
+  @media (min-width: $breakpoint-tablet) {
+    color: $charcoal-color;
+  }
+
+  @media (min-width: $breakpoint-desktop) {
+    width: 118px;
+    height: 21px;
+  }
 }
 
+.main-header__logo-image {
+  display: inline-flex;
+  margin-right: 56px;
+  pointer-events: all;
 
-.main-header__toggle {
+  @media (min-width: $breakpoint-tablet) {
+    margin-right: 13px;
+  }
 
-
-  // flex: 1 1 auto;
-  // margin: 0;
-  // margin-left: auto;
-  // border: none;
-  // background-image: url("../../images/icons/stack.svg#button_burger");
-  // background-position: center;
-  // background-size: 24px 24px;
-  // background-repeat: no-repeat;
-  // background-color: $white-color;
-  // cursor: pointer;
-  // box-sizing: border-box;
-  // // padding: 24px 21px;
+  @media (min-width: $breakpoint-desktop) {
+    margin-right: 14px;
+  }
 }

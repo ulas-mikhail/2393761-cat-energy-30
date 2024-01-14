@@ -15,29 +15,29 @@
   <link rel="manifest" href="/manifest.webmanifest" />
   <link rel="stylesheet" href="styles/styles.css">
   <script src="scripts/index.js" defer></script>
+
 </head>
 
 <body class="page__body">
-  <header class="page__header main-header " id="header">
+  <header class="page__header main-header ">
     <div class="container">
       <div class="main-header__container">
         <div class="main-header__container-block">
-          <div class="main-header__logo logo-first logo-first--header">
+          <a class="main-header__logo link" href="index.html">
             <div class="main-header__logo-image">
-              <picture class="main-header__picture">
+              <picture>
                 <source media="(min-width: 1440px)" type="image/svg+xml" width="70" height="59" srcset="images/logo-desktop.svg" />
                 <source media="(min-width: 768px)" type="image/svg+xml" width="60" height="50" srcset="images/logo-tablet.svg" />
                 <img class="main-header__logo" src="images/logo-mobile.svg" alt="Логотип." width="33" height="38" />
               </picture>
             </div>
 
-            <picture class="main-header__logo-text">
-              <source media="(min-width: 1440px)" type="image/svg+xml" srcset="images/icons/second-logo-mobile.svg" width="101" height="18" />
-              <img class="main-header__logo-title logo-title" src="images/icons/second-logo-mobile.svg" width="101" height="18" alt="Текстовый логотип." />
-            </picture>
-          </div>
+            <svg class="main-header__logo-text" width="101" height="18" aria-hidden="true" focusable="false">
+              <use href="images/icons/stack.svg#text_logo_mobile_header"></use>
+            </svg>
+          </a>
           <button class="main-header__toggle button-burger" type="button">
-            <span class="visually-hidden  button-burger button-burger--close">Открыть Меню</span>
+            <span class="visually-hidden">Открыть Меню</span>
           </button>
         </div>
 
@@ -54,7 +54,6 @@
               <a class="main-navigation__link main-navigation__link--black main-navigation__link--white link" href="form.html">ПОДБОР ПРОГРАММЫ</a>
             </li>
           </ul>
-
         </nav>
       </div>
     </div>
@@ -77,30 +76,23 @@
               </div>
               <div class="hero-section__container-image">
                 <picture>
-                  <source media="(min-width: 1440px)" type="image/webp" srcset="
-                images/promo-desktop@1x.webp 1x,
-                images/promo-desktop@2x.webp 2x
-              " width="552" height="499" />
-                  <source media="(min-width: 1440px)" type="image/png" srcset="
-                images/promo-desktop@1x.png 1x,
-                images/promo-desktop@2x.png 2x
-              " width="552" height="499" />
+                  <source type="image/webp" media="(min-width: 1440px)" srcset="
+                  images/promo-desktop@1x.webp 1x,
+                  images/promo-desktop@2x.webp 2x" width="552" height="499">
                   <source media="(min-width: 768px)" type="image/webp" srcset="
-                images/promo-tablet@1x.webp 1x,
-                images/promo-tablet@2x.webp 2x
-              " width="709" height="609" />
+                  images/promo-tablet@1x.webp 1x,
+                  images/promo-tablet@2x.webp 2x
+                " width="709" height="609">
+                  <source type="imge/webp" srcset="images/promo-mobil@1x.webp 1x, images/promo-mobil@2x.webp 2x" width="280" height="270">
+                  <source type="image/png" media="(min-width: 1440px)" srcset="
+                images/promo-desktop@1x.png 1x,
+                images/promo-desktop@2x.png 2x" width="552" height="499">
                   <source media="(min-width: 768px)" type="image/png" srcset="
                 images/promo-tablet@1x.png 1x,
                 images/promo-tablet@2x.png 2x
-              " width="709" height="609" />
-                  <source type="image/webp" srcset="
-                images/promo-mobil@1x.webp 1x,
-                images/promo-mobil@2x.webp 2x
-              " width="280" height="270" />
-                  <img class="hero-section__image" src="images/promo-mobil@1x.png" srcset="
-                images/promo-mobil@1x.png 1x,
-                images/promo-mobil@2x.png 2x
-              " alt="Фотография корма Cat Energy Pro." width="280" height="270" />
+              " width="709" height="609">
+                  <img src="images/promo-mobil@1x.png" srcset="
+                images/promo-mobil@2x.png 2x" alt="Фотография корма Cat Energy Pro." width="280" height="270" loading="lazy">
                 </picture>
               </div>
             </div>
@@ -113,7 +105,6 @@
         <h2 class="visually-hidden">Виды предоставляемых услуг</h2>
         <div class="features__container">
           <ul class="features__list list">
-
             <li class="features__item">
               <article class="features__card product-card product-card--slim">
                 <h3 class="product-card__title title title--sm">ПОХУДЕНИЕ</h3>
@@ -210,36 +201,35 @@
           </div>
           <div class="alive-example__compare-slider">
             <div class="alive-example__container-first">
-              <!-- <input class="alive-example__compare-slider-range" type="range" value="weight" max="2" min="1" step="1"> -->
               <picture>
                 <source media="(min-width: 1440px)" type="image/webp" srcset="
-                  images/cat-fat-desct-tablet@1x.webp 1x,
-                  images/cat-fat-desct-tablet@2x.webp 2x
-                " width="560" height="512" />
-                <source media="(min-width: 1440px)" type="image/png" srcset="
+                images/cat-fat-desct-tablet@1x.webp 1x,
+                images/cat-fat-desct-tablet@2x.webp 2x
+              " width="560" height="512">
+                <source media="(min-width: 768px)" type="image/webp" srcset="
+                images/cat-fat-desct-tablet@1x.webp 1x,
+                images/cat-fat-desct-tablet@2x.webp 2x
+              " width="560" height="512">
+                <source type="image/webp" srcset="
+                images/cat-fat-mobil@1x.webp 1x,
+                images/cat-fat-mobil@2x.webp 2x
+              " width="280" height="256">
+                <source media=" (min-width: 1440px)" type="image/png" srcset="
                   images/cat-fat-desct-tablet@1x.png 1x,
                   images/cat-fat-desct-tablet@2x.png 2x
-                " width="560" height="512" />
-                <source media="(min-width: 768px)" type="image/webp" srcset="
-                  images/cat-fat-desct-tablet@1x.webp 1x,
-                  images/cat-fat-desct-tablet@2x.webp 2x
-                " width="560" height="512" />
+                " width="560" height="512">
                 <source media="(min-width: 768px)" type="image/png" srcset="
                   images/cat-fat-desct-tablet@1x.png 1x,
                   images/cat-fat-desct-tablet@2x.png 2x
-                " width="560" height="512" />
-                <source type="image/webp" srcset="
-                  images/cat-fat-mobil@1x.webp       1x,
-                  images/cat-fat-desct-tablet@2x.png 2x
-                " width="280" height="256" />
+                " width="560" height="512">
                 <img src="images/cat-fat-mobil@1x.png" srcset="
                   images/cat-fat-mobil@1x.png 1x,
                   images/cat-fat-mobil@2x.png 2x
-                " width="280" height="256" alt="Картинка толстого кота." />
+                " width="280" height="256" alt="Картинка толстого кота." loading="lazy">
               </picture>
             </div>
             <div class="alive-example__container-toggle">
-              <button class="demo-range" type="button">
+              <button class="alive-example__range" type="button">
                 <svg aria-hidden="true" focusable="false" width="40" height="40">
                   <use href="images/icons/stack.svg#range_left_right"></use>
                 </svg>
@@ -249,33 +239,32 @@
             <div class="alive-example__container-second">
               <picture>
                 <source media="(min-width: 1440px)" type="image/webp" srcset="
-                  images/cat-slim-deskt-tablet@1x.webp 1x,
-                  images/cat-slim-deskt-tablet@2x.webp 2x
-                " width="560" height="512" />
+                images/cat-slim-deskt-tablet@1x.webp 1x,
+                images/cat-slim-deskt-tablet@2x.webp 2x
+              " width="560" height="512">
+                <source media="(min-width: 768px)" type="image/webp" srcset="
+                images/cat-slim-deskt-tablet@1x.webp 1x,
+                images/cat-slim-deskt-tablet@2x.webp 2x
+              " width="560" height="512">
+                <source type="image/webp" srcset="
+                images/cat-slim-mobil@1x.webp 1x,
+                images/cat-slim-mobil@2x.webp 2x
+              " width="280" height="256">
                 <source media="(min-width: 1440px)" type="image/png" srcset="
                   images/cat-slim-deskt-tablet@1x.png 1x,
                   images/cat-slim-deskt-tablet@2x.png 2x
-                " width="560" height="512" />
-                <source media="(min-width: 768px)" type="image/webp" srcset="
-                  images/cat-slim-deskt-tablet@1x.webp 1x,
-                  images/cat-slim-deskt-tablet@2x.webp 2x
-                " width="560" height="512" />
+                " width="560" height="512">
                 <source media="(min-width: 768px)" type="image/png" srcset="
                   images/cat-slim-deskt-tablet@1x.png 1x,
                   images/cat-slim-deskt-tablet@2x.png 2x
-                " width="560" height="512" />
-                <source type="image/webp" srcset="
-                  images/cat-slim-mobil@1x.webp 1x,
-                  images/cat-slim-mobil@2x.webp 2x
-                " width="280" height="256" />
+                " width="560" height="512">
                 <img src="images/cat-slim-mobil@1x.png" srcset="
                   images/cat-slim-mobil@1x.png 1x,
                   images/cat-slim-mobil@2x.png 2x
-                " width="280" height="256" alt="Картинка худого кота." />
+                " width="280" height="256" alt="Картинка худого кота." loading="lazy">
               </picture>
             </div>
           </div>
-
         </div>
       </div>
     </section>
@@ -283,7 +272,7 @@
       <div class="container">
         <div class="address__container">
           <h2 class="visually-hidden">Адрес офиса</h2>
-          <p class="address__title">ПРИГЛАШАЕМ К СОТРУДНИЧЕСТВУ ДИЛЕРОВ!</p>
+          <p class="address__desc">ПРИГЛАШАЕМ К СОТРУДНИЧЕСТВУ ДИЛЕРОВ!</p>
           <div class="address__container-box">
             <address class="address__location">
               ул. Большая Конюшенная, д. 19/8
@@ -292,53 +281,53 @@
           </div>
         </div>
       </div>
-      <!-- <picture>
-            <source width="1440" height="400" type="image/png" media="(min-width: 1440px)" srcset=" 1x,  2x">
-            <source width="768" height="400" type="image/png" media="(min-width: 768px)" srcset=" 1x,  2x">
-            <img class="address__image" src="" srcset=" 2x" alt="Карта с местоположением Cat Energy." width="320" height="362">
-            </picture> -->
-      <iframe class="address__map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6036257261221!2d30.32046711291568!3d59.93871916198896!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1703675051566!5m2!1sru!2sru" width="320" height="362" title="Санкт-Петербург, Большая Конюшенная ул., 19/8" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-      <div class="address__map-image"></div>
+      <div class="address__container-map">
+        <iframe class="address__map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6036257261221!2d30.32046711291568!3d59.93871916198896!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1703675051566!5m2!1sru!2sru" width="320" height="362" title="Санкт-Петербург, Большая Конюшенная ул., 19/8" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        <div class="address__container-image">
+          <picture>
+            <source type="image/webp" media="(min-width: 1440px)" srcset="images/map-desktop@1x.webp 1x, images/map-desktop@2x.webp 2x" width="1440" height="400">
+            <source type="image/webp" media="(min-width: 768px)" srcset="images/map-tablet@1x.webp 1x, images/map--tablet@2x.webp 2x" width="768" height="400">
+            <source type="image/webp" srcset="images/map-mobile@1x.webp 1x, images/map-mobile@2x.webp 2x" width="320" height="362">
+            <source type="image/png" media="(min-width: 1440px)" srcset="images/map-desktop@1x.png 1x, images/map-desktop@2x.png 2x" width="1440" height="400">
+            <source type="image/png" media="(min-width: 768px)" srcset="images/map-tablet@1x.png 1x, images/map--tablet@2x.png 2x" width="768" height="400">
+            <img class="address__image" src="images/map-mobile@1x.png" srcset="images/map-mobile@2x.png 2x" width="320" height="362" alt="ул. Большая Конюшенная, д. 19/8 Санкт-Петербург." loading="lazy">
+          </picture>
+        </div>
+      </div>
     </section>
   </main>
   <footer class="page__footer main-footer">
     <div class="container">
       <div class="main-footer__container">
         <div class="main-footer__logo">
-          <span class="main-footer__second-logo-image logo-second logo-second--footer">
-            <svg role="img" viewBox="0 0 128 24" width="128" height="24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false">
-              <g clip-path="url(#a)" fill="#111">
-                <path d="M1.62 21.96a9.43 9.43 0 0 1-1.6-5.72v-8.48a9.56 9.56 0 0 1 1.5-5.82c1.1-1.33 2.8-1.94 5.31-1.94 2.5 0 4.1.61 5.1 1.74a7.43 7.43 0 0 1 1.51 5v2.04h-4.9v-2.35a5.4 5.4 0 0 0-.3-2.04 1.42 1.42 0 0 0-1.4-.82c-.71 0-1.21.2-1.41.72a6.72 6.72 0 0 0-.3 2.25v10.92a4.3 4.3 0 0 0 .4 2.15c.2.5.7.71 1.4.71s1.1-.2 1.3-.71c.23-.7.33-1.42.3-2.15v-2.45h4.91v2.05a7.92 7.92 0 0 1-1.5 5.1c-1 1.23-2.7 1.84-5.1 1.84-2.41-.1-4.22-.71-5.22-2.04Zm17.73-21.66h5.7l4.21 23.3h-4.6l-.8-4.91h-3.31l-.8 4.9h-4.7l4.3-23.28Zm4.1 15.33-1.2-9.1-1.2 9.1h2.4Zm9.32-11.44h-3.4v-3.88h11.9v3.78h-3.4v19.5h-5.1v-19.4Zm17.63-3.89h8.8v2.46h-5.7v7.66h4.6v2.35h-4.6v8.57h5.7v2.35h-8.9v-23.38h.1Zm11.4 0h2.21l6.51 15.43v-15.42h2.6v23.28h-2l-6.6-15.93v15.93h-2.71v-23.28Zm14.33 0h8.81v2.46h-5.7v7.66h4.6v2.35h-4.6v8.57h5.7v2.35h-8.81v-23.38Zm11.41 0h4.61a7.9 7.9 0 0 1 5.1 1.44c1.1.92 1.6 2.55 1.6 4.7 0 2.96-.9 4.8-2.8 5.4l3.21 11.65h-3.1l-3-10.93h-2.51v10.93h-3.2v-23.18h.1Zm4.41 10.01c1.03.1 2.06-.2 2.9-.81.6-.51.9-1.53.9-3.07a6.72 6.72 0 0 0-.3-2.24 2.58 2.58 0 0 0-1.1-1.23 4.49 4.49 0 0 0-2.2-.4h-1.4v7.65h1.2v.1Zm10.91 11.55a10.49 10.49 0 0 1-1.4-5.93v-7.76a17 17 0 0 1 .5-4.4c.34-1.06 1-2 1.9-2.65 1.12-.67 2.41-1 3.71-.92 2.1 0 3.6.51 4.5 1.64a7.93 7.93 0 0 1 1.41 5.1v.82h-3v-.71c0-.86-.07-1.71-.2-2.56a2.05 2.05 0 0 0-.8-1.32 3.05 3.05 0 0 0-1.9-.51 2.96 2.96 0 0 0-2.01.6 2.3 2.3 0 0 0-.8 1.64c-.13.92-.2 1.84-.2 2.76v8.68a9.43 9.43 0 0 0 .6 3.88c.4.82 1.2 1.12 2.4 1.12a2.38 2.38 0 0 0 2.4-1.22c.53-1.3.77-2.69.7-4.09v-1.63h-2.9v-2.35h5.81v11.54h-2l-.3-2.65a4.17 4.17 0 0 1-1.56 2.2c-.74.53-1.64.8-2.55.76a4.92 4.92 0 0 1-4.3-2.04Zm17.13-6.44-4.9-15.01h3l3.5 11.23 3.4-11.23h3.01l-4.9 15.01v8.17h-3.01v-8.17h-.1Z" />
-              </g>
-              <defs>
-                <clippath id="a">
-                  <path fill="#fff" d="M0 0h128v24h-128z" />
-                </clippath>
-              </defs>
+          <span class="main-footer__link">
+            <svg width="128" height="24" aria-hidden="true" focusable="false">
+              <use href="images/icons/stack.svg#text_logo_footer"></use>
             </svg>
+            <span class="visually-hidden">Логотип CAT ENERGY.</span>
           </span>
         </div>
         <div class="main-footer__social-media social-media">
           <ul class="social-media__list list list--social">
             <li class="social-media__item">
-              <a class="social-media__link social-media__link--vkontakte" href="https://vk.com/htmlacademy">
-                <svg class="social-media__icon" aria-hidden="true" focusable="false" width="28" height="22">
+              <a class="social-media__link social-media__link--vkontakte" href="https://vk.com/htmlacademy" rel="dofollow">
+                <svg aria-hidden="true" focusable="false" width="28" height="22">
                   <use href="images/icons/stack.svg#vkontakte"></use>
                 </svg>
                 <span class="visually-hidden">Вконтакте.</span>
               </a>
             </li>
             <li class="social-media__item">
-              <a class="social-media__link social-media__link--youtube" href="https://www.youtube.com/user/htmlacademyru">
-                <svg class="social-media__icon" aria-hidden="true" focusable="false" width="28" height="22">
+              <a class="social-media__link social-media__link--youtube" href="https://www.youtube.com/user/htmlacademyru" rel="dofollow">
+                <svg aria-hidden="true" focusable="false" width="28" height="22">
                   <use href="images/icons/stack.svg#youtube"></use>
                 </svg>
                 <span class="visually-hidden">Ютуб.</span>
               </a>
             </li>
             <li class="social-media__item">
-              <a class="social-media__link social-media__link--telegram" href="https://t.me/htmlacademy">
-                <svg class="social-media__icon" aria-hidden="true" focusable="false" width="28" height="22">
+              <a class="social-media__link social-media__link--telegram" href="https://t.me/htmlacademy" rel="dofollow">
+                <svg aria-hidden="true" focusable="false" width="28" height="22">
                   <use href="images/icons/stack.svg#telegram"></use>
                 </svg>
                 <span class="visually-hidden">Телеграмм.</span>

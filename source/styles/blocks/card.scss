@@ -4,6 +4,20 @@
   display: grid;
   grid-template-columns: 1fr 1fr;
 
+  @media (min-width: $breakpoint-tablet) {
+    display: flex;
+    flex-direction: column;
+    padding: 10px 40px 37px;
+    box-sizing: border-box;
+    width: 324px;
+    min-height: 511px;
+    background: linear-gradient(to bottom, $white-color 16%, $secondary-color 16%);
+  }
+
+  @media (min-width: $breakpoint-desktop) {
+    width: 245px;
+  }
+
   &--psevdo {
 
   }
@@ -13,42 +27,106 @@
   display: flex;
   justify-content: center;
   align-items: center;
+
+  @media (min-width: $breakpoint-tablet) {
+    min-height: 210px;
+    margin-bottom: 22px;
+  }
+
+  @media (min-width: $breakpoint-desktop) {
+    margin-bottom: 12px;
+  }
 }
 
-.card__information {
+.card__container-information {
 
 }
 
 .card__title {
-  font-size: 16px;
+
   line-height: 20px;
   width: 100px;
   margin-bottom: 14px;
+
+  @media (min-width: $breakpoint-tablet) {
+    line-height: 24px;
+    width: 135px;
+    text-align: center;
+    margin: 0 auto;
+    margin-bottom: 21px;
+  }
+
+  @media (min-width: $breakpoint-desktop) {
+    display: inline;
+    margin: 0;
+    margin-bottom: 23px;
+  }
 }
 
 .card__link {
+  display: inline-block;
 
-}
+  &:hover {
+    color: $primary-color;
+  }
 
-.card__desc {
+  &:focus-visible {
+    color: $primary-color;
+  }
 
+  &:active {
+    color: $primary-color;
+    opacity: 0.3;
+  }
 }
 
 .card__wrapper-desc {
   display: flex;
   flex-direction: column;
+
+  @media (min-width: $breakpoint-desktop) {
+    margin-top: 23px;
+  }
 }
 
-.card__wrapper-psevdo {
 
+.card__desc-wrapper-psevdo {
+  @media (min-width: $breakpoint-tablet) {
+    &::after {
+      content: " ";
+      display: block;
+      width: 100%;
+      height: 1px;
+      background-color: $secondary-color-line-psevdo;
+      margin-top: 4px;
+      margin-bottom: 5px;
+    }
+  }
+}
+
+.card__desc {
+  display: flex;
+  font-size: 12px;
+  line-height: 16px;
+  color: $charcoal-color;
+  margin: 0;
+
+  @media (min-width: $breakpoint-tablet) {
+    font-size: 16px;
+    line-height: 20px;
+  }
+}
+
+.card__name {
+  margin-right: auto;
 }
 
 .card__button {
   grid-column: 1/-1;
   width: 100%;
   margin-top: 17px;
-}
 
-.card-more__button {
-
+  @media (min-width: $breakpoint-tablet) {
+    margin-top: 32px;
+  }
 }

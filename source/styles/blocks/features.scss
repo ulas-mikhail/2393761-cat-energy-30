@@ -1,18 +1,32 @@
 .features {
-
+  @media (min-width: $breakpoint-desktop) {
+    margin: 0 auto;
+    margin-bottom: 71px;
+  }
 }
 
 .features__container {
-
-
+  @media (min-width: $breakpoint-desktop) {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+  }
 }
 
 .features__list {
-  list-style-type: none;
+  // list-style-type: none;
+
+  @media (min-width: $breakpoint-desktop) {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, 570px);
+    gap: 80px;
+  }
 }
 
 .features__item {
-
+  @media (min-width: $breakpoint-desktop) {
+    max-width: 650px;
+  }
 }
 
 .features__card {
@@ -21,5 +35,9 @@
 
   @media (min-width: $breakpoint-tablet) {
     margin-bottom: 30px;
+  }
+
+  @media (min-width: $breakpoint-desktop) {
+    margin-bottom: unset;
   }
 }

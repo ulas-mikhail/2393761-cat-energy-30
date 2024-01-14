@@ -1,8 +1,8 @@
 .link {
   font-family: $secondary-font;
-  color: #000000;
   text-transform: uppercase;
   text-decoration: none;
+  position: relative;
 
   &--product {
     color: $text-catalog-title;
@@ -10,35 +10,36 @@
 
 
   &--arrow {
-    &--arrow::after {
+    &::after {
 
       content: " ";
-      padding-right: 10px;
       color: #222222;
       cursor: pointer;
       display: block;
       width: 32px;
       height: 10px;
-      background-size: 32px 10px;
       background-image: url("../../images/icons/stack.svg#icon_arrow");
       background-position: -8px;
+      background-size: 32px 10px;
       background-repeat: no-repeat;
-      right: 50px;
-      bottom: 20px;
       transition: 0.3s ease-in-out;
+      position: relative;
     }
-  }
-
-  &:hover::after {
-    background-position: 0;
-  }
-
-  &:active {
-    opacity: 0.6;
-  }
 
 
-  &--more {
+    &:hover::after,
+    &:focus-visible::after {
+      background-position: unset;
+      transition: background-position 0.5s ease;
+    }
 
+    &:active {
+      opacity: 0.3;
+    }
+
+
+    &--more {
+
+    }
   }
 }

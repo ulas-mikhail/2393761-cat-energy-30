@@ -2,20 +2,20 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  padding: 10px 44px;
   font-family: $secondary-font;
   font-size: 16px;
+  font-weight: inherit;
   line-height: 20px;
   text-transform: uppercase;
   text-decoration: none;
   border: 0;
-  padding: 10px 44px;
   cursor: pointer;
 
 
   &--primary {
     background-color: $primary-color;
-    color: #ffffff;
-    padding: 10px 44px;
+    color: $white-color;
 
     &:hover,
     &:focus-visible {
@@ -26,31 +26,18 @@
       color: rgba($white-color, 0.3);
       background-color: $secondary-color;
     }
-
-    @media (min-width: $breakpoint-tablet) {
-      padding: 14px 26px;
-      font-size: 20px;
-      line-height: 26px;
-    }
   }
+
 
   &--secondary {
     background-color: $secondary-color;
     color: $charcoal-color;
+    padding: 10px 30px;
 
     &:hover,
     &:focus-visible,
     &:active {
       background-color: $secondary-color-line-psevdo;
     }
-  }
-
-
-  @include vp-tablet {
-    padding: 14px 26px;
-  }
-
-  @include vp-desktop {
-    padding: 14px 26px;
   }
 }

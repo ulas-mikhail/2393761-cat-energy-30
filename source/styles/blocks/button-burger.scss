@@ -1,4 +1,5 @@
 .button-burger {
+  display: block;
   background-position: center;
   background-size: 24px 24px;
   background-repeat: no-repeat;
@@ -6,15 +7,28 @@
   border: 0;
   height: 24px;
   width: 24px;
-  background-color: #f2f2f2;
+  background-color: transparent;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+
+
+  &--visible {
+    display: block;
+  }
 
 
   &--close {
-    background-image: url("../../images/icons/stack.svg#");
+    display: block;
+    background-image: url("../../images/icons/stack.svg#button_burger_close");
     background-size: 18px 18px;
+    transform: rotate(90deg);
+  }
 
-    @media (min-width: $breakpoint-tablet) {
-      display: none;
-    }
+  @media (min-width: $breakpoint-tablet) {
+    display: none;
+  }
+
+  @media (min-width: $breakpoint-desktop) {
+    display: none;
   }
 }

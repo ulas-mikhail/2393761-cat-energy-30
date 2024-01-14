@@ -1,9 +1,23 @@
 .catalog {
-
+  @media (min-width: $breakpoint-tablet) {
+    margin-bottom: 70px;
+  }
 }
 
 .catalog__list {
+  @media (min-width: $breakpoint-tablet) {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, 324px);
+    grid-auto-flow: dense;
+    gap: 60px;
+    justify-content: center;
+  }
 
+  @media (min-width: $breakpoint-desktop) {
+
+    grid-template-columns: repeat(auto-fill, 245px);
+    gap: 63px 80px;
+  }
 }
 
 .catalog__item {
@@ -14,6 +28,10 @@
     height: 1px;
     background-color: $secondary-color-line-psevdo;
     margin-left: -20px;
+
+    @media (min-width: $breakpoint-tablet) {
+      display: none;
+    }
   }
 }
 
