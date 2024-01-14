@@ -1,21 +1,83 @@
 .title {
-  font-family: $primary-font;
+  font-family: $secondary-font;
+  font-weight: inherit;
   margin: 0;
   padding: 0;
-  font-style: normal;
-  font-weight: 400;
+
 
   &--tiny {
     font-size: 16px;
-    line-height: 16px;
+
+
+    @media (min-width: $breakpoint-tablet) {
+      font-size: 20px;
+    }
   }
 
   &--sm {
     font-size: 24px;
+
+    @media (min-width: $breakpoint-tablet) {
+      font-size: 36px;
+    }
   }
 
   &--medium {
     font-size: 36px;
     line-height: 36px;
+
+    @media (min-width: $breakpoint-tablet) {
+      font-size: 60px;
+    }
+  }
+
+  &--green-psevdo {
+    // background-color: $white-color;
+    // box-shadow: -20px 0 0 $white-color, 20px 0 0 $white-color;
+
+    // @media (min-width: $breakpoint-tablet) {
+    //   box-shadow: -40px 0 0 $white-color, 40px 0 0 $white-color;
+    position: relative;
+    max-width: 187px;
+
+    @media (min-width: $breakpoint-tablet) {
+      max-width: 512px;
+    }
+  }
+
+  &--green-psevdo::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    right: calc(100% + 30px);
+    width: 100vw;
+    height: 2px;
+    background-color: $primary-color;
+  }
+
+  &--green-psevdo::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: calc(100% + 20px);
+    width: 100vw;
+    height: 2px;
+    background-color: $primary-color;
   }
 }
+
+// &--green-psevdo::before {
+//   content: " ";
+//   position: absolute;
+//   top: 17px;
+//   right: 0;
+//   width: 100vw;
+//   height: 2px;
+//   background-color: $primary-color;
+//   box-shadow: 100vw 0 0 $primary-color;
+//   z-index: -1;
+
+//   @media (min-width: $breakpoint-tablet) {
+//     top: 24px;
+//   }
+// }

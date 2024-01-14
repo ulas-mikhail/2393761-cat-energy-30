@@ -1,44 +1,45 @@
 .link {
   font-family: $secondary-font;
-  color: #000000;
   text-transform: uppercase;
   text-decoration: none;
-
-  &--arrow {
-
-    position: relative;
-    padding-right: 10px;
-    color: #222222;
-    cursor: pointer;
-  }
-
-  &--arrow::after {
-    content: " ";
-    display: block;
-    width: 40px;
-    height: 40px;
-    background-image: url("../../images/icons/stack.svg#icon_arrow");
-    background-position: -8px;
-    background-repeat: no-repeat;
-    position: absolute;
-    right: -50px;
-    bottom: -10px;
-    transition: 0.3s ease-in-out;
-  }
-
-  &:hover::after {
-    background-position: 0;
-  }
-
-  &:active {
-    opacity: 0.6;
-  }
+  position: relative;
 
   &--product {
-
+    color: $text-catalog-title;
   }
 
-  &--more {
 
+  &--arrow {
+    &::after {
+
+      content: " ";
+      color: #222222;
+      cursor: pointer;
+      display: block;
+      width: 32px;
+      height: 10px;
+      background-image: url("../../images/icons/stack.svg#icon_arrow");
+      background-position: -8px;
+      background-size: 32px 10px;
+      background-repeat: no-repeat;
+      transition: 0.3s ease-in-out;
+      position: relative;
+    }
+
+
+    &:hover::after,
+    &:focus-visible::after {
+      background-position: unset;
+      transition: background-position 0.5s ease;
+    }
+
+    &:active {
+      opacity: 0.3;
+    }
+
+
+    &--more {
+
+    }
   }
 }

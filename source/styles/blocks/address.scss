@@ -1,26 +1,114 @@
 .address {
-  background-color: $secondary-color;
+  line-height: 20px;
+
+  &--background {
+    background-color: $secondary-color;
+  }
+
+  @media (min-width: $breakpoint-desktop) {
+    position: relative;
+  }
 }
 
 .address__container {
-  background-color: $white-color;
+
+  padding-top: 26px;
+  padding-bottom: 26px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+
+  @media (min-width: $breakpoint-tablet) {
+    padding: 61px 40px;
+  }
+
+  @media (min-width: $breakpoint-desktop) {
+    display: flex;
+    gap: 87px;
+    position: absolute;
+    z-index: 2;
+    top: 95px;
+    background-color: $white-color;
+    padding: 61px 80px 60px;
+    width: 565px;
+    box-sizing: border-box;
+  }
 }
 
-.address__title {
-  font-family: $primary-font;
+
+.address__desc {
+  grid-row: 1/-2;
+  font-family: $secondary-font;
   font-size: 16px;
   color: $black;
-  font-style: normal;
-  font-weight: 400;
-  line-height: 20px;
   text-transform: uppercase;
+  margin: 0;
+  max-width: 140px;
+
+  @media (min-width: $breakpoint-tablet) {
+    font-size: 20px;
+    line-height: 26px;
+  }
+}
+
+.address__container-box {
+  max-width: 140px;
+  margin-left: auto;
+
+  @media (min-width: $breakpoint-tablet) {
+    max-width: 165px;
+  }
 }
 
 .address__location {
-  font-family: $secondary-font;
   color: $charcoal-color;
-  font-size: 14px;
   font-style: normal;
-  font-weight: 400;
-  line-height: 20px;
+  text-decoration: none;
+
+  @media (min-width: $breakpoint-tablet) {
+    font-size: 16px;
+    text-align: end;
+
+    &:not(:last-child) {
+      margin-bottom: 19px;
+    }
+  }
+
+  @media (min-width: $breakpoint-desktop) {
+    text-align: start;
+  }
+}
+
+.address__container-map {
+  position: relative;
+  width: 100%;
+  min-height: 362px;
+
+  @media (min-width: $breakpoint-tablet) {
+    min-height: 400px;
+  }
+}
+
+.address__map {
+  display: block;
+  position: relative;
+  z-index: 1;
+  border: 0;
+  width: 100%;
+
+  @media (min-width: $breakpoint-tablet) {
+    height: 400px;
+  }
+}
+
+.address__container-image {
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 0;
+}
+
+.address__image {
+  width: 100%;
+  object-fit: cover;
 }

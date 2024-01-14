@@ -1,4 +1,13 @@
 .control {
+  position: relative;
+  display: inline-block;
+  padding-left: 45px;
+  cursor: pointer;
+
+  @media (min-width: $breakpoint-tablet) {
+    padding-left: 55px;
+  }
+
   &--radio {
 
   }
@@ -9,9 +18,66 @@
 }
 
 .control__mark {
+  position: absolute;
+  top: -5px;
+  left: 0;
+  width: 30px;
+  height: 30px;
+  background-color: $white-color;
+  border: 1px solid #cdcdcd;
+  box-sizing: border-box;
 
+  @media (min-width: $breakpoint-tablet) {
+    width: 40px;
+    height: 40px;
+  }
 }
 
 .control__discrip {
 
+}
+
+.control__input {
+  &[type="checkbox"]:checked ~ .control__mark {
+    background-image: url("../../images/icons/stack.svg#checkboxbutton_active");
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+
+  &[type="radio"] ~ .control__mark {
+    border-radius: 50%;
+  }
+
+  &[type="radio"]:checked ~ .control__mark::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 25%;
+    transform: translateY(-50%);
+    width: 15px;
+    height: 15px;
+    background-color: $primary-color;
+    border-radius: 50%;
+
+    @media (min-width: $breakpoint-tablet) {
+
+      width: 20px;
+      height: 20px;
+    }
+  }
+
+  &:hover ~ .control__mark,
+  &:focus-visible ~ .control__mark {
+    border: 1px solid #bababa;
+  }
+
+  &:focus-visible ~ .control__mark {
+    border: 2px solid $charcoal-color;
+  }
+
+  &:disabled ~ .control__mark,
+  &:disabled ~ .control__discrip {
+    opacity: 0.3;
+    cursor: not-allowed;
+  }
 }
