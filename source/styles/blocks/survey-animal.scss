@@ -1,6 +1,6 @@
-.survey-animal {
+// .survey-animal {
 
-}
+// }
 
 .survey-animal__wrapper-section {
   margin-bottom: 26px;
@@ -139,29 +139,29 @@
 .survey-animal__characteristic {
   color: $charcoal-color;
 
-  &--name {
+  // &--name {
 
-  }
+  // }
 
-  &--weight {
+  // &--weight {
 
-  }
+  // }
 
-  &--age {
+  // &--age {
 
-  }
+  // }
 
-  &--email {
+  // &--email {
 
-  }
+  // }
 
-  &--phone {
+  // &--phone {
 
-  }
+  // }
 
-  &--comments {
+  // &--comments {
 
-  }
+  // }
 }
 
 .survey-animal__label {
@@ -203,9 +203,9 @@
   display: grid;
   row-gap: 23px;
 
-  &--type {
+  // &--type {
 
-  }
+  // }
 
   &--checkbox {
     @media (min-width: $breakpoint-tablet) {
@@ -231,13 +231,13 @@
   right: 12px;
   transform: translateY(-50%);
 
-  &--message {
+  // &--message {
 
-  }
+  // }
 
-  &--phone {
+  // &--phone {
 
-  }
+  // }
 }
 
 .survey-animal__textarea {
