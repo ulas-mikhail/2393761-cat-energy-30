@@ -13,6 +13,11 @@
     left: 0;
   }
 
+  &--open .main-navigation__item:first-of-type::before,
+  &--open .main-navigation__item::after {
+    width: 100%;
+  }
+
   &--closed {
     display: none;
   }
@@ -26,6 +31,11 @@
     margin-left: auto;
     max-width: 75%;
     background-color: transparent;
+    padding-top: 14px;
+  }
+
+  @media (min-width: $breakpoint-desktop) {
+    max-width: 50%;
   }
 }
 
@@ -84,8 +94,7 @@
   display: block;
   font-size: 20px;
   line-height: 20px;
-  padding-top: 22px;
-  padding-bottom: 24px;
+  padding: 21px 20px 23px;
 
   @media (min-width: $breakpoint-tablet) {
     font-size: 18px;

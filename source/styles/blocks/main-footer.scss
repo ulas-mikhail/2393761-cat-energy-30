@@ -4,8 +4,12 @@
   padding-bottom: 40px;
 
   @media (min-width: $breakpoint-tablet) {
-    padding-top: 61px;
+    padding-top: 42px;
     padding-bottom: 61px;
+  }
+
+  @media (min-width: $breakpoint-desktop) {
+    padding-top: 53px;
   }
 }
 
@@ -30,7 +34,7 @@
     display: block;
     width: 100%;
     height: 1px;
-    margin-top: 20px;
+    margin-top: 15px;
     background-color: $secondary-color-line-psevdo;
   }
 
@@ -45,6 +49,7 @@
 }
 
 .main-footer__link {
+  display: inline-block;
   color: $black;
 
   &:hover,
@@ -74,7 +79,7 @@
     display: block;
     width: 100%;
     height: 1px;
-    margin-bottom: 20px;
+    margin-bottom: 8px;
     background-color: $secondary-color-line-psevdo;
   }
 

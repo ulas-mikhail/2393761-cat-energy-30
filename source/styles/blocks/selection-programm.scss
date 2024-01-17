@@ -2,9 +2,15 @@
   background-color: $white-color;
 }
 
-// .selection-programm__container {
+.selection-programm__container {
+  @media (min-width: $breakpoint-tablet) {
+    margin-left: 40px;
+  }
 
-// }
+  @media (min-width: $breakpoint-desktop) {
+    margin: 0;
+  }
+}
 
 
 .selection-programm__title {
@@ -68,6 +74,8 @@
 
   @media (min-width: $breakpoint-desktop) {
     grid-template-columns: 570px 1fr;
+    gap: 80px;
+    margin-bottom: 80px;
   }
 }
 
