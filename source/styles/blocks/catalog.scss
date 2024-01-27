@@ -1,6 +1,10 @@
 .catalog {
   @media (min-width: $breakpoint-tablet) {
-    margin-bottom: 70px;
+    margin-bottom: 65px;
+  }
+
+  @media (min-width: $breakpoint-desktop) {
+    margin-bottom: 73px;
   }
 }
 

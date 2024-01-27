@@ -23,7 +23,7 @@
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-between;
-    align-items: center;
+    align-items: start;
     padding-top: 25px;
     padding-bottom: 0;
   }
@@ -38,9 +38,9 @@
   justify-content: space-between;
   align-items: center;
   padding-top: 13px;
-  padding-bottom: 14px;
+  padding-bottom: 15px;
 
-  @media (min-width: $breakpoint-desktop) {
+  @media (min-width: $breakpoint-tablet) {
     padding: 0;
   }
 }
@@ -81,6 +81,10 @@
   display: inline-flex;
   margin-right: 56px;
   pointer-events: all;
+
+  & img {
+    display: block;
+  }
 
   @media (min-width: $breakpoint-tablet) {
     margin-right: 13px;

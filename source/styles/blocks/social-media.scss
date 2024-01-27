@@ -7,6 +7,10 @@
   justify-content: center;
   flex-wrap: wrap;
   gap: 24px;
+
+  @media (min-width: $breakpoint-tablet) {
+    margin-left: 40px;
+  }
 }
 
 .social-media__item {

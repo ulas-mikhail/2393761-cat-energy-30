@@ -1,5 +1,6 @@
 .link {
   font-family: $secondary-font;
+  color: $primary-text;
   text-transform: uppercase;
   text-decoration: none;
   position: relative;
@@ -22,7 +23,7 @@
       background-position: -8px;
       background-size: 32px 10px;
       background-repeat: no-repeat;
-      transition: 0.3s ease-in-out;
+      // transition: 0.3s ease-in-out;
       position: relative;
     }
 
