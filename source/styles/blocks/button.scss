@@ -26,6 +26,11 @@
       color: rgba($white-color, 0.3);
       background-color: $secondary-color;
     }
+
+    &:disabled {
+      opacity: 0.3;
+      cursor: not-allowed;
+    }
   }
 
 
@@ -38,6 +43,11 @@
     &:focus-visible,
     &:active {
       background-color: $secondary-color-line-psevdo;
+    }
+
+    &:disabled {
+      opacity: 0.3;
+      cursor: not-allowed;
     }
   }
 }

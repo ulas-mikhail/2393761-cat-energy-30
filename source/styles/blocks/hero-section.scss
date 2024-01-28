@@ -1,6 +1,7 @@
 .hero-section {
   display: flex;
   color: $white-color;
+  overflow: hidden;
   min-height: 478px;
   background: linear-gradient(#414045, #414045);
   background-repeat: no-repeat;
@@ -56,13 +57,26 @@
       background:
         linear-gradient(to right, rgba($primary-color, 0.85) 50%, rgba($primary-color, 0.85) 50%),
         image-set(
-          url("../../images/hero-section-background-desktop @1x.webp") type("image/webp") 1x,
-          url("../../images/hero-section-background-desktop @2x.webp") type("image/webp") 2x,
-          url("../../images/hero-section-background-desktop @1x.jpg") type("image/jpg") 1x,
-          url("../../images/hero-section-background-desktop @2x.jpg") type("image/jpg") 2x);
+          url("../../images/promo-background-desktop@1x.webp") type("image/webp") 1x,
+          url("../../images/promo-background-desktop@2x.webp") type("image/webp") 2x,
+          url("../../images/promo-background-desktop@1x.jpg") type("image/jpg") 1x,
+          url("../../images/promo-background-desktop@2x.jpg") type("image/jpg") 2x);
       background-repeat: no-repeat;
       background-position: top right;
-      background-size: 50vw 694px, cover;
+      background-size: 50vw 694px, contain;
+    }
+
+    &::after {
+      content: " ";
+      display: block;
+      position: absolute;
+      top: 0;
+      right: 0;
+      width: 50%;
+      height: 694px;
+      background: linear-gradient(#414045, #414045);
+      background-size: 50vw 694px;
+      z-index: -1;
     }
   }
 }

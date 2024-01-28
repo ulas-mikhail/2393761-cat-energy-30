@@ -6,12 +6,12 @@
   line-height: 24px;
   margin-top: 25px;
   display: inline-block;
-  padding-bottom: 36px;
 
   @media (min-width: $breakpoint-tablet) {
     margin-left: 40px;
     line-height: 36px;
     margin-top: unset;
+    margin-bottom: 36px;
   }
 
   @media (min-width: $breakpoint-desktop) {
@@ -21,7 +21,7 @@
 }
 
 .additional__container {
-  margin-top: 44px;
+  margin-top: 32px;
 
   @media (min-width: $breakpoint-desktop) {
     display: flex;

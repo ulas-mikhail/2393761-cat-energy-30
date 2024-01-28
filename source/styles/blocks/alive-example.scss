@@ -132,13 +132,11 @@
   min-height: 256px;
 
   @media (min-width: $breakpoint-tablet) {
-    margin: 0;
-    margin-bottom: 101px;
+    margin: 0 auto 101px;
   }
 
   @media (min-width: $breakpoint-desktop) {
-    margin-bottom: 10px;
-    margin-left: auto;
+    margin: 0 0 10px auto;
   }
 }
 

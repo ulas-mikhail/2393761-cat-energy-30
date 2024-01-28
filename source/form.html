@@ -14,7 +14,7 @@
   <link rel="icon" type="image/png" sizes="16x16" href="favicons/favicon-16x16.png">
   <link rel="manifest" href="/manifest.webmanifest">
   <link rel="stylesheet" href="styles/styles.css">
-  <script src="scripts/index.js" defer></script>
+  <script src="scripts/index.js" defer="defer"></script>
 </head>
 
 <body class="page__body">
@@ -76,13 +76,13 @@
                 <label class="survey-animal__label survey-animal__label--input" for="animal-name">
                   <span class="survey-animal__title form-data">ИМЯ:*</span>
                   <span class="survey-animal__wrapper-input">
-                    <input class="survey-animal__input input-field" placeholder="Укажите имя владельца" id="animal-name" type="text" name="selection-name" value="БАРСИК">
+                    <input class="survey-animal__input input-field" placeholder="Укажите имя владельца" id="animal-name" type="text" name="selection-name" value="БАРСИК" required>
                   </span>
                 </label>
                 <label class="survey-animal__label survey-animal__label--input" for="animal-weight">
                   <span class="survey-animal__title form-data">ВЕС (КГ):*</span>
                   <span class="survey-animal__wrapper-input">
-                    <input class="survey-animal__input input-field" placeholder="Укажите вес вашего питомца" id="animal-weight" type="text" name="selection-weight" value="7">
+                    <input class="survey-animal__input input-field" placeholder="Укажите вес вашего питомца" id="animal-weight" type="text" name="selection-weight" value="7" required>
                   </span>
                 </label>
 
@@ -134,7 +134,7 @@
                 <span class="survey-animal__title form-data">E-mail:*</span>
                 <span class="survey-animal__wrapper-input">
                   <input class="survey-animal__input  input-field input-field--icon" placeholder="Введите ваш email" id="email" type="email" name="e-mail" value="kuklachev@gmail.com" required>
-                  <svg class="survey-animal__icon survey-animal__icon--message icon" width="20" height="20" aria-hidden="true" focusable="false">
+                  <svg class="survey-animal__icon survey-animal__icon--message icon" width="18" height="20" aria-hidden="true" focusable="false">
                     <use href="images/icons/stack.svg#email-data"></use>
                   </svg>
                 </span>
@@ -144,7 +144,7 @@
                 <span class="survey-animal__title form-data">Телефон:*</span>
                 <span class="survey-animal__wrapper-input">
                   <input class="survey-animal__input input-field--icon input-field" placeholder="Введите ваш телефон" id="phone" type="tel" name="tel" value="8 (960) 900-60-90" required />
-                  <svg class="survey-animal__icon survey-animal__icon--phone icon" width="20" height="20" aria-hidden="true" focusable="false">
+                  <svg class="survey-animal__icon survey-animal__icon--phone icon" width="16" height="16" aria-hidden="true" focusable="false">
                     <use href="images/icons/stack.svg#phone-data"></use>
                   </svg>
                 </span>
@@ -159,7 +159,7 @@
                 <label class="survey-animal__label" for="comments">
                   <span class="visually-hidden">Ваш комментарий:</span>
                 </label>
-                <textarea class="survey-animal__textarea input-field input-field--textarea" id="comments" rows="8" name="comments" placeholder="Расскажите обо всех повадках кота" required></textarea>
+                <textarea class="survey-animal__textarea input-field input-field--textarea" id="comments" name="comments" placeholder="Расскажите обо всех повадках кота" required></textarea>
               </div>
             </div>
           </fieldset>
@@ -202,7 +202,7 @@
             <button class="selection-programm__button button button--primary" type="submit">
               Отправить заявку
             </button>
-            <p class="selection-programm__necessarily">* — Обязательные поля</p>
+            <p class="selection-programm__necessarily">* – Обязательные поля</p>
           </div>
         </form>
       </div>
@@ -240,12 +240,12 @@
     <div class="container">
       <div class="main-footer__container">
         <div class="main-footer__logo">
-          <span class="main-footer__link">
+          <a class="main-footer__link" href="#">
             <svg width="128" height="24" aria-hidden="true" focusable="false">
               <use href="images/icons/stack.svg#text_logo_footer"></use>
             </svg>
             <span class="visually-hidden">Логотип CAT ENERGY.</span>
-          </span>
+          </a>
         </div>
         <div class="main-footer__social-media social-media">
           <ul class="social-media__list list list--social">
