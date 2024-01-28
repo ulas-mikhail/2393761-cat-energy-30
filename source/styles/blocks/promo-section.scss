@@ -1,5 +1,4 @@
 .promo-section {
-  // background-color: $white-color;
   margin-bottom: 49px;
 
   @media (min-width: $breakpoint-tablet) {
@@ -25,11 +24,6 @@
 }
 
 .promo-section__title {
-  // font-family: $primary-font;
-  // text-align: center;
-  // font-size: 36px;
-  // font-style: normal;
-  // font-weight: 400;
   line-height: 40px;
   margin-bottom: 40px;
 
@@ -45,7 +39,6 @@
 }
 
 .promo-section__list {
-  // list-style-type: none;
   display: grid;
   gap: 20px;
 
@@ -65,7 +58,7 @@
   grid-template-columns: 60px 1fr;
   gap: 20px;
   align-items: center;
-  // row-gap: 20px;
+
   @media (min-width: $breakpoint-tablet) {
     position: relative;
     display: flex;
@@ -81,8 +74,6 @@
       counter-increment: list-item;
       position: absolute;
       left: 0%;
-      top: 50%;
-      transform: translateY(-50%);
       background-color: transparent;
       color: $secondary-color;
       font-size: 280px;
@@ -195,12 +186,7 @@
 }
 
 .promo-section__desc {
-  // font-family: $secondary-font;
   color: $charcoal-color;
-  // font-size: 14px;
-  // font-style: normal;
-  // font-weight: 400;
-  // line-height: 18px;
   margin: 0;
 
   @media (min-width: $breakpoint-tablet) {

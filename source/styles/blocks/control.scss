@@ -7,14 +7,6 @@
   @media (min-width: $breakpoint-tablet) {
     padding-left: 58px;
   }
-
-  // &--radio {
-
-  // }
-
-  // &--checkbox {
-
-  // }
 }
 
 .control__mark {
@@ -32,10 +24,6 @@
     height: 40px;
   }
 }
-
-// .control__discrip {
-
-// }
 
 .control__input {
   &[type="checkbox"]:checked ~ .control__mark {

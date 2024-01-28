@@ -29,8 +29,13 @@
     margin-top: 82px;
     border: 2px solid $secondary-color;
     min-height: 429px;
+    min-width: 324px;
     box-sizing: border-box;
     padding: 50px 20px 40px;
+  }
+
+  @media (min-width: $breakpoint-desktop) {
+    min-width: 245px;
   }
 }
 
@@ -40,14 +45,6 @@
     width: 170px;
   }
 }
-
-// .card-more__image {
-
-// }
-
-// .card-more__text {
-
-// }
 
 .card-more__title {
   color: $black;
@@ -63,12 +60,6 @@
   }
 }
 
-// .card-more__link {
-//   text-decoration: none;
-//   cursor: pointer;
-//   color: inherit;
-// }
-
 .card-more__desc {
   font-size: 12px;
   line-height: 16px;
@@ -79,6 +70,10 @@
     font-size: 16px;
     line-height: 18px;
     margin-bottom: 80px;
+  }
+
+  @media (min-width: $breakpoint-desktop) {
+    margin-bottom: 91px;
   }
 }
 

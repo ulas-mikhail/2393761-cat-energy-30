@@ -120,7 +120,7 @@
   }
 
   @media (min-width: $breakpoint-desktop) {
-    margin-top: 81px;
+    margin-top: 53px;
   }
 }
 
@@ -170,12 +170,6 @@
   }
 }
 
-
-// .hero-section__picture {
-
-
-// }
-
 .hero-section__container-button {
   order: 2;
 
@@ -192,7 +186,7 @@
   @media (min-width: $breakpoint-tablet) {
     display: inline-block;
     margin-left: 90px;
-    padding: 14px 26px;
+    padding: 14px 28px;
     font-size: 20px;
     line-height: 26px;
     order: 1;

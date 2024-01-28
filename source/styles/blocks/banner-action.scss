@@ -41,8 +41,8 @@
   }
 
   @media (min-width: $breakpoint-desktop) {
-    width: 245px;
-    padding: 60px 38px 42px;
+    width: 244px;
+    padding: 57px 38px 42px;
     margin: 0;
     background:
       linear-gradient(rgba($primary-color, 0.85), rgba($primary-color, 0.85)),
@@ -56,7 +56,7 @@
   }
 }
 
-.banner__container {
+.banner-action__container {
   width: 161px;
   text-align: center;
 
@@ -76,13 +76,8 @@
   color: $white-color;
 }
 
-
-// .banner-action__image-link {
-
-// }
-
 .banner-action__desc {
-  font-family: $secondary-font;
+  font-family: $primary-font;
   color: $white-color;
   text-align: center;
   font-size: 16px;
@@ -93,11 +88,12 @@
 
   @media (min-width: $breakpoint-tablet) {
     display: flex;
-    align-items: center;
+    text-align: start;
   }
 
   @media (min-width: $breakpoint-desktop) {
     display: unset;
+    text-align: center;
   }
 
   &::before {

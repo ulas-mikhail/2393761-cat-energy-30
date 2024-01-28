@@ -1,6 +1,3 @@
-// .survey-animal {
-
-// }
 
 .survey-animal__wrapper-section {
   margin-bottom: 26px;
@@ -136,30 +133,6 @@
 
 .survey-animal__characteristic {
   color: $charcoal-color;
-
-  // &--name {
-
-  // }
-
-  // &--weight {
-
-  // }
-
-  // &--age {
-
-  // }
-
-  // &--email {
-
-  // }
-
-  // &--phone {
-
-  // }
-
-  // &--comments {
-
-  // }
 }
 
 .survey-animal__label {
@@ -201,10 +174,6 @@
   display: grid;
   row-gap: 23px;
 
-  // &--type {
-
-  // }
-
   &--checkbox {
     @media (min-width: $breakpoint-tablet) {
       grid-template-columns: repeat(2, 1fr);
@@ -227,16 +196,10 @@
 .survey-animal__icon {
   position: absolute;
   top: 50%;
-  right: 15px;
+  right: 16px;
   transform: translateY(-50%);
-
-  // &--message {
-
-  // }
-
-  // &--phone {
-
-  // }
+  width: 20px;
+  height: 20px;
 }
 
 .survey-animal__textarea {

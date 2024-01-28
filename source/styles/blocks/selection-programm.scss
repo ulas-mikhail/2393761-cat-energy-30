@@ -1,5 +1,6 @@
 .selection-programm {
   background-color: $white-color;
+  overflow: hidden;
 }
 
 .selection-programm__container {
@@ -31,7 +32,7 @@
 }
 
 .selection-programm__desc {
-  font-family: $primary-font;
+  font-family: $secondary-font;
   font-size: 14px;
   font-style: normal;
   font-weight: 400;
@@ -79,7 +80,7 @@
   }
 }
 
-.selection-programm-button {
+.selection-programm__button {
   width: 100%;
 
   @media (min-width: $breakpoint-tablet) {
