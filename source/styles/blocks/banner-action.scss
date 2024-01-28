@@ -9,7 +9,7 @@
 }
 
 .banner-action__all {
-  min-height: 290px;
+  height: 100%;
   box-sizing: border-box;
   padding: 60px 60px 43px 60px;
   margin-top: 35px;
@@ -25,9 +25,8 @@
   background-size: cover;
 
   @media (min-width: $breakpoint-tablet) {
-    min-height: 200px;
     width: 707px;
-    padding: 57px 125px 60px 77px;
+    padding: 60px 125px 60px 77px;
     margin-top: 70px;
     margin-bottom: 75px;
     background:
@@ -42,9 +41,8 @@
   }
 
   @media (min-width: $breakpoint-desktop) {
-    height: 288px;
-    width: 245px;
-    padding: 60px 38px 42px;
+    width: 244px;
+    padding: 57px 38px 42px;
     margin: 0;
     background:
       linear-gradient(rgba($primary-color, 0.85), rgba($primary-color, 0.85)),
@@ -58,7 +56,7 @@
   }
 }
 
-.banner__container {
+.banner-action__container {
   width: 161px;
   text-align: center;
 
@@ -78,13 +76,8 @@
   color: $white-color;
 }
 
-
-// .banner-action__image-link {
-
-// }
-
 .banner-action__desc {
-  font-family: $secondary-font;
+  font-family: $primary-font;
   color: $white-color;
   text-align: center;
   font-size: 16px;
@@ -95,11 +88,12 @@
 
   @media (min-width: $breakpoint-tablet) {
     display: flex;
-    align-items: center;
+    text-align: start;
   }
 
   @media (min-width: $breakpoint-desktop) {
     display: unset;
+    text-align: center;
   }
 
   &::before {
@@ -118,7 +112,8 @@
       margin: unset;
       flex-shrink: 0;
       width: 80px;
-      margin-right: 245px;
+      margin-right: 264px;
+      margin-top: -3px;
     }
 
     @media (min-width: $breakpoint-desktop) {

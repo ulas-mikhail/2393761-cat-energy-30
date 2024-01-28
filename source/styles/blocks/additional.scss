@@ -1,17 +1,17 @@
-// .additional {
-
-// }
+.additional {
+  overflow: hidden;
+}
 
 .additional__title {
   line-height: 24px;
   margin-top: 25px;
   display: inline-block;
-  padding-bottom: 36px;
 
   @media (min-width: $breakpoint-tablet) {
     margin-left: 40px;
     line-height: 36px;
     margin-top: unset;
+    margin-bottom: 36px;
   }
 
   @media (min-width: $breakpoint-desktop) {
@@ -21,12 +21,16 @@
 }
 
 .additional__container {
-  margin-top: 44px;
+  margin-top: 32px;
+
+  @media (min-width: $breakpoint-tablet) {
+    margin-top: 42px;
+  }
 
   @media (min-width: $breakpoint-desktop) {
     display: flex;
     flex-wrap: wrap;
-    margin-top: 80px;
+    margin-top: 45px;
     margin-bottom: 87px;
     gap: 80px;
   }
@@ -115,8 +119,3 @@
     }
   }
 }
-
-// .additional__card {
-
-
-// }

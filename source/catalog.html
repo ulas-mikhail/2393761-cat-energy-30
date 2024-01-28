@@ -14,7 +14,7 @@
   <link rel="icon" type="image/png" sizes="16x16" href="favicons/favicon-16x16.png">
   <link rel="manifest" href="/manifest.webmanifest">
   <link rel="stylesheet" href="styles/styles.css">
-  <script src="scripts/index.js" defer></script>
+  <script src="scripts/index.js" defer="defer"></script>
 </head>
 
 <body class="page__body">
@@ -66,7 +66,7 @@
     <section class="catalog">
       <div class="container">
         <h2 class="visually-hidden">Список товаров</h2>
-        <ul class="catalog__list list list--product">
+        <ul class="catalog__list list">
           <li class="catalog__item">
             <article class="catalog__card card card--psevdo">
               <a class="card__image" href="#" tabindex="-1">
@@ -482,7 +482,7 @@
                 <a class="banner-action__image-link banner-action__icon " href="#" tabindex="-1" aria-label="акция">
                 </a>
                 <p class="banner-action__desc">
-                  Закажите все <span class="custom-br"></span>и получите чехол для кота в подарок!
+                  Закажите все<br>и получите чехол для кота в подарок!
                 </p>
               </div>
             </div>
@@ -523,12 +523,12 @@
     <div class="container">
       <div class="main-footer__container">
         <div class="main-footer__logo">
-          <span class="main-footer__link">
+          <a class="main-footer__link" href="#">
             <svg width="128" height="24" aria-hidden="true" focusable="false">
               <use href="images/icons/stack.svg#text_logo_footer"></use>
             </svg>
             <span class="visually-hidden">Логотип CAT ENERGY.</span>
-          </span>
+          </a>
         </div>
         <div class="main-footer__social-media social-media">
           <ul class="social-media__list list list--social">

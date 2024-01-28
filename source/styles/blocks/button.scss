@@ -19,12 +19,17 @@
 
     &:hover,
     &:focus-visible {
-      background-color: $secondary-color;
+      background-color: $primary-button;
     }
 
     &:active {
       color: rgba($white-color, 0.3);
-      background-color: $secondary-color;
+      background-color: $primary-button;
+    }
+
+    &:disabled {
+      opacity: 0.3;
+      cursor: not-allowed;
     }
   }
 
@@ -38,6 +43,11 @@
     &:focus-visible,
     &:active {
       background-color: $secondary-color-line-psevdo;
+    }
+
+    &:disabled {
+      opacity: 0.3;
+      cursor: not-allowed;
     }
   }
 }

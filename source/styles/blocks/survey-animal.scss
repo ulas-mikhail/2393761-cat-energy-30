@@ -1,6 +1,3 @@
-// .survey-animal {
-
-// }
 
 .survey-animal__wrapper-section {
   margin-bottom: 26px;
@@ -64,8 +61,8 @@
   padding-bottom: 24px;
 
   @media (min-width: $breakpoint-tablet) {
-    padding-top: 65px;
-    padding-bottom: 69px;
+    padding-top: 67px;
+    padding-bottom: 67px;
   }
 
   @media (min-width: $breakpoint-desktop) {
@@ -88,12 +85,8 @@
     gap: 20px;
 
     @media (min-width: $breakpoint-tablet) {
-      padding: 28px 27px 32px;
-      gap: 30px;
-    }
-
-    @media (min-width: $breakpoint-desktop) {
       padding: 30px 27px 30px;
+      gap: 30px;
     }
   }
 
@@ -117,8 +110,8 @@
     padding-top: 36px;
 
     @media (min-width: $breakpoint-tablet) {
-      padding-top: 67px;
-      padding-bottom: 70px;
+      padding-top: 76px;
+      padding-bottom: 63px;
     }
   }
 
@@ -131,8 +124,8 @@
 
     @media (min-width: $breakpoint-tablet) {
       gap: 30px;
-      padding-top: 48px;
-      padding-bottom: 65px;
+      padding-top: 52px;
+      padding-bottom: 58px;
     }
   }
 }
@@ -140,30 +133,6 @@
 
 .survey-animal__characteristic {
   color: $charcoal-color;
-
-  // &--name {
-
-  // }
-
-  // &--weight {
-
-  // }
-
-  // &--age {
-
-  // }
-
-  // &--email {
-
-  // }
-
-  // &--phone {
-
-  // }
-
-  // &--comments {
-
-  // }
 }
 
 .survey-animal__label {
@@ -205,10 +174,6 @@
   display: grid;
   row-gap: 23px;
 
-  // &--type {
-
-  // }
-
   &--checkbox {
     @media (min-width: $breakpoint-tablet) {
       grid-template-columns: repeat(2, 1fr);
@@ -231,20 +196,15 @@
 .survey-animal__icon {
   position: absolute;
   top: 50%;
-  right: 12px;
+  right: 16px;
   transform: translateY(-50%);
-
-  // &--message {
-
-  // }
-
-  // &--phone {
-
-  // }
+  width: 20px;
+  height: 20px;
 }
 
 .survey-animal__textarea {
   min-height: 150px;
+  margin: 0;
 
   @media (min-width: $breakpoint-tablet) {
     min-height: 175px;

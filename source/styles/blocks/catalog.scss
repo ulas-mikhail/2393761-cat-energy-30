@@ -1,6 +1,6 @@
 .catalog {
   @media (min-width: $breakpoint-tablet) {
-    margin-bottom: 65px;
+    margin-bottom: 68px;
   }
 
   @media (min-width: $breakpoint-desktop) {
@@ -25,6 +25,10 @@
 }
 
 .catalog__item {
+  @media (min-width: $breakpoint-tablet) {
+    display: flex;
+  }
+
   &::after {
     content: " ";
     display: block;
@@ -38,7 +42,3 @@
     }
   }
 }
-
-// .catalog__card {
-
-// }

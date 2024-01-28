@@ -14,34 +14,24 @@
   }
 
   &:hover {
-    border: 1px solid #cdcdcd;
+    outline: 1px solid #cdcdcd;
   }
 
   &:focus-visible {
-    border: 2px solid $charcoal-color;
-    outline: none;
+    outline: 2px solid $charcoal-color;
+  }
+
+  &:disabled {
+    background-color: $error-color;
   }
 
   &--error {
-    border: 2px solid $error-color;
+    outline: 2px solid $error-color;
   }
 
   &--error ~ .icon {
     color: $error-color;
   }
-
-  // &--name {
-
-  // }
-
-  // &--weight {
-
-  // }
-
-  // &--age {
-
-  // }
-
 
   &--icon {
     padding-right: 33px;
