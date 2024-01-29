@@ -47,6 +47,7 @@
   display: inline-block;
   line-height: 26px;
   max-width: 190px;
+  text-transform: capitalize;
 
   @media (min-width: $breakpoint-tablet) {
     line-height: 36px;
