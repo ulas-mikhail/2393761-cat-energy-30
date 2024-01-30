@@ -15,10 +15,10 @@
   <link rel="manifest" href="/manifest.webmanifest" />
   <link rel="stylesheet" href="styles/styles.css">
   <script src="scripts/index.js" defer="defer"></script>
-
 </head>
 
 <body class="page__body">
+  <!-- Header starts -->
   <header class="page__header main-header ">
     <div class="container">
       <div class="main-header__container">
@@ -31,7 +31,6 @@
                 <img class="main-header__logo" src="images/logo-mobile.svg" alt="Логотип." width="33" height="38" />
               </picture>
             </div>
-
             <svg class="main-header__logo-text" width="101" height="18" aria-hidden="true" focusable="false">
               <use href="images/icons/stack.svg#text_logo_mobile_header"></use>
             </svg>
@@ -40,26 +39,28 @@
             <span class="visually-hidden">Открыть Меню</span>
           </button>
         </div>
-
+        <!-- main-navigation -->
         <nav class="main-navigation">
-
           <ul class="main-navigation__list list list--nav">
             <li class="main-navigation__item ">
-              <span class="main-navigation__link  main-navigation__link--current main-navigation__link--black main-navigation__link--white link">ГЛАВНАЯ</span>
+              <span class="main-navigation__link  main-navigation__link--current main-navigation__link--black main-navigation__link--white link">главная</span>
             </li>
             <li class="main-navigation__item">
-              <a class="main-navigation__link main-navigation__link--black main-navigation__link--white link" href="catalog.html">КАТАЛОГ ПРОДУКЦИИ</a>
+              <a class="main-navigation__link main-navigation__link--black main-navigation__link--white link" href="catalog.html">каталог продукции</a>
             </li>
             <li class="main-navigation__item">
-              <a class="main-navigation__link main-navigation__link--black main-navigation__link--white link" href="form.html">ПОДБОР ПРОГРАММЫ</a>
+              <a class="main-navigation__link main-navigation__link--black main-navigation__link--white link" href="form.html">подбор программы</a>
             </li>
           </ul>
         </nav>
+
       </div>
     </div>
   </header>
+  <!-- Header ends -->
   <main class="page__main main-container main-index">
     <h1 class="visually-hidden">Cat Energy</h1>
+
     <section class="hero-section">
       <div class="hero-section__container-background">
         <div class="hero-section__container-block">
@@ -72,7 +73,7 @@
                 <p class="hero-section__desc">Занялся собой? Займись котом!</p>
               </div>
               <div class="hero-section__container-button">
-                <a class="hero-section__button button button--primary" href="form.html">ПОДОБРАТЬ ПРОГРАММУ</a>
+                <a class="hero-section__button button button--primary" href="form.html">подобрать программу</a>
               </div>
               <div class="hero-section__container-image">
                 <picture>
@@ -100,6 +101,7 @@
         </div>
       </div>
     </section>
+
     <section class="features">
       <div class="container">
         <h2 class="visually-hidden">Виды предоставляемых услуг</h2>
@@ -107,13 +109,13 @@
           <ul class="features__list list">
             <li class="features__item">
               <article class="features__card product-card product-card--slim">
-                <h3 class="product-card__title title title--sm">ПОХУДЕНИЕ</h3>
+                <h3 class="product-card__title title title--sm">похудение</h3>
                 <p class="product-card__desc">
                   Ваш кот весит больше собаки и почти утратил способность лазить
                   по деревьям? Пора на диету! Cat Energy Slim поможет вашему
                   питомцу сбросить лишний вес.
                 </p>
-                <a class="product-card__link link link--arrow" href="catalog.html">КАТАЛОГ SLIM</a>
+                <a class="product-card__link link link--arrow" href="catalog.html">каталог slim</a>
               </article>
             </li>
             <li class="features__item">
@@ -124,13 +126,14 @@
                   Cat Energy Pro поможет вашему коту нарастить необходимые
                   мышцы!
                 </p>
-                <a class="product-card__link link link--arrow" href="catalog.html">КАТАЛОГ PRO</a>
+                <a class="product-card__link link link--arrow" href="catalog.html">каталог pro</a>
               </article>
             </li>
           </ul>
         </div>
       </div>
     </section>
+
     <section class="promo-section  promo-section--psevdo">
       <div class="container">
         <h2 class="promo-section__title title title--medium">
@@ -163,6 +166,7 @@
         </ul>
       </div>
     </section>
+
     <section class="alive-example">
       <div class="container">
         <div class="alive-example__container">
@@ -180,15 +184,11 @@
                   </dd>
                 </div>
                 <div class="stats-list__item">
-
                   <dt class="stats-list__result-title">60 дней</dt>
                   <dd class="stats-list__result-desc">
                     затрачено времени
-
                   </dd>
-
                 </div>
-
               </dl>
               <p class="alive-example__result"><span>затраты на питание:</span>
                 <span>15 000 руб.</span>
@@ -264,6 +264,7 @@
         </div>
       </div>
     </section>
+    <!-- address -->
     <section class="address">
       <div class="container">
         <div class="address__container">
@@ -292,6 +293,7 @@
       </div>
     </section>
   </main>
+  <!-- Footer starts -->
   <footer class="page__footer main-footer">
     <div class="container">
       <div class="main-footer__container">
@@ -303,6 +305,7 @@
             <span class="visually-hidden">Логотип CAT ENERGY.</span>
           </span>
         </div>
+        <!-- social-media -->
         <div class="main-footer__social-media social-media">
           <ul class="social-media__list list list--social">
             <li class="social-media__item">
@@ -331,6 +334,7 @@
             </li>
           </ul>
         </div>
+        <!-- copyright -->
         <div class="main-footer__copyright copyright">
           <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">
             <span class="copyright__name">HTML Academy</span>
@@ -342,6 +346,7 @@
       </div>
     </div>
   </footer>
+  <!-- Footer ends -->
 </body>
 
 </html>

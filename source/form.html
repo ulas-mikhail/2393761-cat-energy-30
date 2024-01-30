@@ -18,6 +18,7 @@
 </head>
 
 <body class="page__body">
+  <!-- Header starts -->
   <header class="page__header main-header main-header--psevdo ">
     <div class="container">
       <div class="main-header__container">
@@ -30,7 +31,6 @@
                 <img src="images/logo-mobile.svg" alt="Логотип." width="33" height="38">
               </picture>
             </div>
-
             <svg class="main-header__logo-text" width="101" height="18" aria-hidden="true" focusable="false">
               <use href="images/icons/stack.svg#text_logo_mobile_header"></use>
             </svg>
@@ -39,9 +39,8 @@
             <span class="visually-hidden">Открыть Меню</span>
           </button>
         </div>
-
+        <!-- main-navigaton -->
         <nav class="main-navigation">
-
           <ul class="main-navigation__list list list--nav">
             <li class="main-navigation__item ">
               <a class="main-navigation__link   main-navigation__link--black  link" href="index.html">ГЛАВНАЯ</a>
@@ -54,10 +53,13 @@
             </li>
           </ul>
         </nav>
+
       </div>
     </div>
   </header>
+  <!-- Header ends -->
   <main class="page__main main-container main-form">
+
     <section class="selection-programm">
       <div class="container">
         <div class="selection-programm__container">
@@ -65,7 +67,7 @@
             Подбор программы
           </h1>
           <p class="selection-programm__desc">
-            ЗАПОЛНИТЕ АНКЕТУ, И МЫ ПОДБЕРЕМ ПРОГРАММУ ПИТАНИЯ ДЛЯ ВАШЕГО КОТА
+            заполните анкету, и мы подберем программу питания для вашего кота
           </p>
         </div>
         <form class="selection-programm__form survey-animal" method="get" action="https://echo.htmlacademy.ru">
@@ -85,7 +87,6 @@
                     <input class="survey-animal__input input-field" placeholder="Укажите вес вашего питомца" id="animal-weight" type="text" name="selection-weight" value="7" required>
                   </span>
                 </label>
-
                 <label class="survey-animal__label survey-animal__label--input" for="animal-age">
                   <span class="survey-animal__title form-data">возраст (лет):</span>
                   <span class="survey-animal__wrapper-input">
@@ -155,7 +156,6 @@
             <legend class="survey-animal__legend title title--green-psevdo title--sm ">комментарий</legend>
             <div class="survey-animal__wrapper-label survey-animal__wrapper-label--textarea">
               <div class="survey-animal__characteristic survey-animal__characteristic--comments">
-
                 <label class="survey-animal__label" for="comments">
                   <span class="visually-hidden">Ваш комментарий:</span>
                 </label>
@@ -207,6 +207,7 @@
         </form>
       </div>
     </section>
+    <!-- address -->
     <section class="address address--background">
       <div class="container">
         <div class="address__container">
@@ -234,8 +235,9 @@
         </div>
       </div>
     </section>
-  </main>
 
+  </main>
+  <!-- Footer starts -->
   <footer class="page__footer main-footer">
     <div class="container">
       <div class="main-footer__container">
@@ -247,6 +249,7 @@
             <span class="visually-hidden">Логотип CAT ENERGY.</span>
           </a>
         </div>
+        <!-- Social-media -->
         <div class="main-footer__social-media social-media">
           <ul class="social-media__list list list--social">
             <li class="social-media__item">
@@ -275,6 +278,7 @@
             </li>
           </ul>
         </div>
+        <!-- copyright -->
         <div class="main-footer__copyright copyright">
           <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">
             <span class="copyright__name">HTML Academy</span>
@@ -286,6 +290,7 @@
       </div>
     </div>
   </footer>
+  <!-- Footer ends -->
 </body>
 
 </html>

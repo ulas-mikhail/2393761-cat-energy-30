@@ -22,6 +22,8 @@
 }
 
 .features__item {
+  display: flex;
+
   @media (min-width: $breakpoint-desktop) {
     max-width: 650px;
   }
