@@ -12,8 +12,8 @@
   height: 100%;
   box-sizing: border-box;
   padding: 60px 60px 43px 60px;
-  margin-top: 35px;
-  margin-bottom: 35px;
+  margin-top: 37px;
+  margin-bottom: 34px;
   background:
     linear-gradient(rgba($primary-color, 0.85), rgba($primary-color, 0.85)),
     image-set(
@@ -26,8 +26,8 @@
 
   @media (min-width: $breakpoint-tablet) {
     width: 707px;
-    padding: 60px 125px 60px 77px;
-    margin-top: 70px;
+    padding: 63px 125px 60px 77px;
+    margin-top: 66px;
     margin-bottom: 75px;
     background:
       linear-gradient(rgba($primary-color, 0.85), rgba($primary-color, 0.85)),
@@ -89,6 +89,7 @@
   @media (min-width: $breakpoint-tablet) {
     display: flex;
     text-align: start;
+    padding-top: 10px;
   }
 
   @media (min-width: $breakpoint-desktop) {
@@ -113,7 +114,7 @@
       flex-shrink: 0;
       width: 80px;
       margin-right: 264px;
-      margin-top: -3px;
+      margin-top: -13px;
     }
 
     @media (min-width: $breakpoint-desktop) {

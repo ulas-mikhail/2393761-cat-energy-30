@@ -30,7 +30,7 @@
   @media (min-width: $breakpoint-tablet) {
     padding: 0;
     margin-top: unset;
-    margin-bottom: 60px;
+    margin-bottom: 62px;
     line-height: 60px;
   }
 
@@ -58,13 +58,13 @@
   }
 
   @media (min-width: $breakpoint-desktop) {
-    padding-top: 70px;
+    padding-top: 71px;
     margin-bottom: 69px;
   }
 }
 
 .alive-example__wrapper-stats {
-  margin-bottom: 20px;
+  margin-bottom: 18px;
 
   @media (min-width: $breakpoint-tablet) {
     display: flex;
@@ -91,7 +91,7 @@
   }
 
   @media (min-width: $breakpoint-desktop) {
-    margin-bottom: 60px;
+    margin-bottom: 59px;
   }
 }
 
@@ -130,7 +130,7 @@
   min-height: 256px;
 
   @media (min-width: $breakpoint-tablet) {
-    margin: 0 auto 101px;
+    margin: 4px auto 101px;
   }
 
   @media (min-width: $breakpoint-desktop) {
