@@ -15,7 +15,7 @@
   }
 
   @media (min-width: $breakpoint-desktop) {
-    margin-bottom: 69px;
+    margin-bottom: 67px;
 
     &--psevdo::after {
       display: none;
@@ -25,16 +25,17 @@
 
 .promo-section__title {
   line-height: 40px;
-  margin-bottom: 40px;
+  margin-bottom: 41px;
 
   @media (min-width: $breakpoint-tablet) {
     line-height: 60px;
     padding-top: 15px;
-    margin-bottom: 32px;
+    margin-bottom: 35px;
   }
 
   @media (min-width: $breakpoint-desktop) {
     padding-top: unset;
+    padding-left: 2px;
   }
 }
 
@@ -64,12 +65,12 @@
     display: flex;
     flex-direction: column;
     align-items: start;
-    min-height: 280px;
+    min-height: 279px;
     width: 245px;
     gap: unset;
 
     &::after {
-      font-family: $secondary-font, sans-serif;
+      font-family: $secondary-font;
       content: counter(list-item);
       counter-increment: list-item;
       position: absolute;
@@ -104,7 +105,7 @@
     }
 
     @media (min-width: $breakpoint-desktop) {
-      margin-top: 41px;
+      margin-top: 38px;
     }
   }
 
@@ -129,7 +130,7 @@
     }
 
     @media (min-width: $breakpoint-desktop) {
-      margin-top: 41px;
+      margin-top: 38px;
     }
   }
 
@@ -154,7 +155,7 @@
     }
 
     @media (min-width: $breakpoint-desktop) {
-      margin-top: 41px;
+      margin-top: 38px;
     }
   }
 
@@ -180,7 +181,7 @@
     }
 
     @media (min-width: $breakpoint-desktop) {
-      margin-top: 41px;
+      margin-top: 38px;
     }
   }
 }

@@ -49,15 +49,30 @@
     width: 100vw;
     height: 2px;
     background-color: $primary-color;
+
+    @media (min-width: $breakpoint-desktop) {
+      top: 67%;
+      right: calc(100% + 40px);
+    }
   }
 
   &--green-psevdo::after {
     content: "";
     position: absolute;
-    top: 66%;
-    left: calc(100% + 40px);
+    top: 58%;
+    left: calc(100% + 22px);
     width: 100vw;
     height: 2px;
     background-color: $primary-color;
+
+    @media (min-width: $breakpoint-tablet) {
+      top: 66%;
+      left: calc(100% + 40px);
+    }
+
+    @media (min-width: $breakpoint-tablet) {
+      top: 66%;
+      left: calc(100% + 41px);
+    }
   }
 }

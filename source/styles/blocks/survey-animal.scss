@@ -47,7 +47,7 @@
   display: inline-block;
   line-height: 26px;
   max-width: 190px;
-  text-transform: capitalize;
+
 
   @media (min-width: $breakpoint-tablet) {
     line-height: 36px;
@@ -80,7 +80,7 @@
   }
 
   &--pick {
-    padding-top: 24px;
+    padding-top: 26px;
     display: flex;
     flex-direction: column;
     gap: 20px;
@@ -93,10 +93,10 @@
 
   &--columns {
     display: grid;
-    gap: 14px;
+    gap: 12px;
 
     @media (min-width: $breakpoint-tablet) {
-      gap: 20px;
+      gap: 15px;
     }
 
     @media (min-width: $breakpoint-desktop) {
@@ -108,17 +108,22 @@
   }
 
   &--textarea {
-    padding-top: 36px;
+    padding-top: 33px;
 
     @media (min-width: $breakpoint-tablet) {
       padding-top: 76px;
       padding-bottom: 63px;
     }
+
+    @media (min-width: $breakpoint-desktop) {
+      padding-top: 62px;
+      padding-bottom: 71px;
+    }
   }
 
   &--checkbox {
     padding-top: 39px;
-    padding-bottom: 24px;
+    padding-bottom: 22px;
     display: flex;
     flex-direction: column;
     gap: 20px;
@@ -126,7 +131,13 @@
     @media (min-width: $breakpoint-tablet) {
       gap: 30px;
       padding-top: 52px;
-      padding-bottom: 58px;
+      padding-bottom: 64px;
+    }
+
+    @media (min-width: $breakpoint-desktop) {
+
+      padding-top: 51px;
+      padding-bottom: 65px;
     }
   }
 }
@@ -197,7 +208,7 @@
 .survey-animal__icon {
   position: absolute;
   top: 50%;
-  right: 16px;
+  right: 12px;
   transform: translateY(-50%);
   width: 20px;
   height: 20px;

@@ -31,7 +31,7 @@
     margin-left: auto;
     max-width: 75%;
     background-color: transparent;
-    padding-top: 14px;
+    padding-top: 15px;
   }
 
   @media (min-width: $breakpoint-desktop) {
@@ -43,8 +43,13 @@
   @media (min-width: $breakpoint-tablet) {
     display: flex;
     flex-wrap: wrap;
-    gap: 33px;
+    gap: 34px;
     justify-content: end;
+    padding-right: 3px;
+  }
+
+  @media (min-width: $breakpoint-desktop) {
+    gap: 33px;
   }
 }
 
@@ -132,7 +137,7 @@
     @media (min-width: $breakpoint-tablet) {
       content: " ";
       position: absolute;
-      bottom: -10px;
+      bottom: -7px;
       left: 0;
       height: 2px;
       background-color: $primary-color;
@@ -145,7 +150,7 @@
     @media (min-width: $breakpoint-desktop) {
       content: " ";
       position: absolute;
-      bottom: -10px;
+      bottom: -9px;
       left: 0;
       height: 2px;
       background-color: $white-color;

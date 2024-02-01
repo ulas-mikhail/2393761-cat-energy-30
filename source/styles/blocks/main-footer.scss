@@ -4,12 +4,12 @@
   padding-bottom: 40px;
 
   @media (min-width: $breakpoint-tablet) {
-    padding-top: 42px;
+    padding-top: 39px;
     padding-bottom: 61px;
   }
 
   @media (min-width: $breakpoint-desktop) {
-    padding-top: 53px;
+    padding-top: 56px;
   }
 }
 
@@ -58,7 +58,7 @@
   }
 
   &:active {
-    // color: #6b6b6b;
+    color: #6b6b6b;
     opacity: 0.3;
   }
 }
